@@ -1,0 +1,20 @@
+﻿#RICE
+#texticon = {
+#    icon = marc_hegion_icon
+#    iconsize = {
+#        texture = "gfx/interface/icons/regimenttypes/marc_hegion.dds"
+#        size = { 25 25 }
+#        offset = { 0 6 }
+#        fontsize = 16
+#    }
+#}
+
+texticon = {
+    icon = RICE_siberian_hunters_icon
+    iconsize = {
+        texture = "gfx/interface/icons/regimenttypes/RICE_siberian_hunters.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
