@@ -1,4 +1,5 @@
-﻿template kmc_knight_manager_widget
+﻿#CMH Knight Manager Addition
+template kmc_knight_manager_widget
 {
 	vbox = {
 		name = kmc_settings
