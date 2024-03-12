@@ -1,0 +1,82 @@
+﻿on_game_start = {
+    on_actions = {
+		CMH_on_game_start
+		CMH_notify_of_war_turn_on_all #War Alerts
+		CMH_KM_set_default_exceptions #Knight Manager
+    }
+}
+
+CMH_on_game_start = {
+	effect = {
+		set_global_variable = {
+			name = CMH_is_loaded
+			value = yes
+		}
+		if = { #Error Destroyer 5000
+			limit = {
+				exists = global_var:CMH_is_loaded
+			}
+			# Do nothing
+		}
+		if = {
+			limit = {
+				exists = global_var:IBL_is_loaded
+				OR = {
+					exists = global_var:CE_is_loaded
+					exists = global_var:BAP_is_loaded
+				}
+			}
+			CMH_africa_patch_effect = yes
+		}
+		CMH_fix_patch_effect = yes
+	}
+}
+
+CMH_notify_of_war_turn_on_all = {
+	effect = {
+		set_global_variable = {
+			name = notify_of_war_activate
+			value = 1
+		}
+		set_global_variable = {
+			name = notify_of_war_pinned
+			value = 1
+		}
+		set_global_variable = {
+			name = notify_of_war_peasant
+			value = 1
+		}
+		set_global_variable = {
+			name = notify_of_war_family
+			value = 2
+		}
+		set_global_variable = {
+			name = notify_of_war_dynasty
+			value = 2
+		}
+		set_global_variable = {
+			name = notify_of_war_vassal_wars
+			value = 2
+		}
+		set_global_variable = {
+			name = notify_of_neighbour_wars
+			value = 1
+		}
+		set_global_variable = {
+			name = notify_of_war_hide
+			value = 0
+		}
+	}
+}
+
+CMH_KM_set_default_exceptions = {
+	effect = {
+		if = {
+			limit = {
+				KM_is_loaded = yes
+			}
+			set_global_variable = kmc_wounded_cannot_be_knight
+			set_global_variable = kmc_pregnant_cannot_be_knight
+		}
+	}
+}

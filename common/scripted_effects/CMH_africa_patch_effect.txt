@@ -1,0 +1,1611 @@
+﻿#By Elvain and Kaepbora
+CMH_africa_patch_effect = {
+	##kill the old man
+	#every_living_character = {
+	#	limit = { age > 128 }
+	#	death = {
+	#		death_reason = death_vanished
+	#	}
+	#}
+	
+	faith:coptic.religious_head = {
+		set_culture = culture:ce_copt
+	}
+	
+	title:d_kwararafa = {
+		set_de_jure_liege_title = title:k_kwararafa
+	}
+
+	title:c_sobrarbe = { set_county_culture = title:c_alto_aragon.culture }
+    title:c_meneka = {
+	set_county_culture = title:c_tadmekka.culture
+	set_county_faith = title:c_tadmekka.faith
+	holder = {
+		set_culture = title:c_tadmekka.culture
+		set_character_faith_with_conversion = title:c_tadmekka.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tadmekka.culture
+			set_character_faith_with_conversion = title:c_tadmekka.faith
+		}
+	}
+}
+    title:c_tajrift = {
+	set_county_culture = title:c_waddan.culture
+	set_county_faith = title:c_waddan.faith
+	holder = {
+		set_culture = title:c_waddan.culture
+		set_character_faith_with_conversion = title:c_waddan.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_waddan.culture
+			set_character_faith_with_conversion = title:c_waddan.faith
+		}
+	}
+}
+    title:c_wallen = {
+	set_county_culture = title:c_tamentit.culture
+	set_county_faith = title:c_tamentit.faith
+	holder = {
+		set_culture = title:c_tamentit.culture
+		set_character_faith_with_conversion = title:c_tamentit.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tamentit.culture
+			set_character_faith_with_conversion = title:c_tamentit.faith
+		}
+	}
+}
+    title:c_timmoun = {
+	set_county_culture = title:c_tamentit.culture
+	set_county_faith = title:c_tamentit.faith
+	holder = {
+		set_culture = title:c_tamentit.culture
+		set_character_faith_with_conversion = title:c_tamentit.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tamentit.culture
+			set_character_faith_with_conversion = title:c_tamentit.faith
+		}
+	}
+}
+    title:c_egerland = {
+	set_county_culture = title:c_hohenburg.culture
+	set_county_faith = title:c_hohenburg.faith
+	holder = {
+		set_culture = title:c_hohenburg.culture
+		set_character_faith_with_conversion = title:c_hohenburg.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_hohenburg.culture
+			set_character_faith_with_conversion = title:c_hohenburg.faith
+		}
+	}
+}
+    title:c_nubt = {
+	set_county_culture = title:c_naqis.culture
+	set_county_faith = title:c_naqis.faith
+	holder = {
+		set_culture = title:c_naqis.culture
+		set_character_faith_with_conversion = title:c_naqis.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_naqis.culture
+			set_character_faith_with_conversion = title:c_naqis.faith
+		}
+	}
+}
+    title:c_musmar = {
+	set_county_culture = title:c_baqlin.culture
+	set_county_faith = title:c_baqlin.faith
+	holder = {
+		set_culture = title:c_baqlin.culture
+		set_character_faith_with_conversion = title:c_baqlin.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_baqlin.culture
+			set_character_faith_with_conversion = title:c_baqlin.faith
+		}
+	}
+}
+    title:c_bayuda = {
+	set_county_culture = title:c_meroe.culture
+	set_county_faith = title:c_meroe.faith
+	holder = {
+		set_culture = title:c_meroe.culture
+		set_character_faith_with_conversion = title:c_meroe.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_meroe.culture
+			set_character_faith_with_conversion = title:c_meroe.faith
+		}
+	}
+}
+    title:c_keraba = {
+	set_county_culture = title:c_abwab.culture
+	set_county_faith = title:c_abwab.faith
+	holder = {
+		set_culture = title:c_abwab.culture
+		set_character_faith_with_conversion = title:c_abwab.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_abwab.culture
+			set_character_faith_with_conversion = title:c_abwab.faith
+		}
+	}
+}
+    title:c_upper_milk = { set_county_culture = title:c_wadi_el-milk.culture }
+    title:c_urhobo = {
+	set_county_culture = title:c_ijaw.culture
+	set_county_faith = title:c_ijaw.faith
+	holder = {
+		set_culture = title:c_ijaw.culture
+		set_character_faith_with_conversion = title:c_ijaw.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_ijaw.culture
+			set_character_faith_with_conversion = title:c_ijaw.faith
+		}
+	}
+}
+    title:c_warri = {
+	set_county_culture = title:c_benin.culture
+	set_county_faith = title:c_benin.faith
+	holder = {
+		set_culture = title:c_benin.culture
+		set_character_faith_with_conversion = title:c_benin.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_benin.culture
+			set_character_faith_with_conversion = title:c_benin.faith
+		}
+	}
+}
+    title:c_aguleri = {
+	set_county_culture = title:c_igbo.culture
+	set_county_faith = title:c_igbo.faith
+	holder = {
+		set_culture = title:c_igbo.culture
+		set_character_faith_with_conversion = title:c_igbo.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_igbo.culture
+			set_character_faith_with_conversion = title:c_igbo.faith
+		}
+	}
+}
+    title:c_anioma = {
+	set_county_culture = title:c_igbo.culture
+	set_county_faith = title:c_igbo.faith
+	holder = {
+		set_culture = title:c_igbo.culture
+		set_character_faith_with_conversion = title:c_igbo.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_igbo.culture
+			set_character_faith_with_conversion = title:c_igbo.faith
+		}
+	}
+}
+    title:c_ikwere = {
+	set_county_culture = title:c_igbo.culture
+	set_county_faith = title:c_igbo.faith
+	holder = {
+		set_culture = title:c_igbo.culture
+		set_character_faith_with_conversion = title:c_igbo.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_igbo.culture
+			set_character_faith_with_conversion = title:c_igbo.faith
+		}
+	}
+}
+    title:c_ogoja = {
+	set_county_culture = title:c_ibibo.culture
+	set_county_faith = title:c_ibibo.faith
+	holder = {
+		set_culture = title:c_ibibo.culture
+		set_character_faith_with_conversion = title:c_ibibo.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_ibibo.culture
+			set_character_faith_with_conversion = title:c_ibibo.faith
+		}
+	}
+}
+    title:c_yako = {
+	set_county_culture = title:c_ibibo.culture
+	set_county_faith = title:c_ibibo.faith
+	holder = {
+		set_culture = title:c_ibibo.culture
+		set_character_faith_with_conversion = title:c_ibibo.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_ibibo.culture
+			set_character_faith_with_conversion = title:c_ibibo.faith
+		}
+	}
+}
+    title:c_apa = {
+	set_county_culture = title:c_keffi.culture
+	set_county_faith = title:c_keffi.faith
+	holder = {
+		set_culture = title:c_keffi.culture
+		set_character_faith_with_conversion = title:c_keffi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_keffi.culture
+			set_character_faith_with_conversion = title:c_keffi.faith
+		}
+	}
+}
+    title:c_biu_kagha = {
+	set_county_culture = title:c_fika.culture
+	set_county_faith = title:c_fika.faith
+	holder = {
+		set_culture = title:c_fika.culture
+		set_character_faith_with_conversion = title:c_fika.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_fika.culture
+			set_character_faith_with_conversion = title:c_fika.faith
+		}
+	}
+}
+    title:c_baninko = {
+	set_county_culture = title:c_sikasso.culture
+	set_county_faith = title:c_sikasso.faith
+	holder = {
+		set_culture = title:c_sikasso.culture
+		set_character_faith_with_conversion = title:c_sikasso.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_sikasso.culture
+			set_character_faith_with_conversion = title:c_sikasso.faith
+		}
+	}
+}
+    title:c_tenkudugo = {
+	set_county_culture = title:c_wagadugu.culture
+	set_county_faith = title:c_wagadugu.faith
+	holder = {
+		set_culture = title:c_wagadugu.culture
+		set_character_faith_with_conversion = title:c_wagadugu.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_wagadugu.culture
+			set_character_faith_with_conversion = title:c_wagadugu.faith
+		}
+	}
+}
+    title:c_awgham = {
+	set_county_culture = title:c_walata.culture
+	set_county_faith = title:c_walata.faith
+	holder = {
+		set_culture = title:c_walata.culture
+		set_character_faith_with_conversion = title:c_walata.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_walata.culture
+			set_character_faith_with_conversion = title:c_walata.faith
+		}
+	}
+}
+    title:c_ningi = {
+	set_county_culture = title:c_bauchi.culture
+	set_county_faith = title:c_bauchi.faith
+	holder = {
+		set_culture = title:c_bauchi.culture
+		set_character_faith_with_conversion = title:c_bauchi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_bauchi.culture
+			set_character_faith_with_conversion = title:c_bauchi.faith
+		}
+	}
+}
+    title:c_damergu = {
+	set_county_culture = title:c_munio.culture
+	set_county_faith = title:c_munio.faith
+	holder = {
+		set_culture = title:c_munio.culture
+		set_character_faith_with_conversion = title:c_munio.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_munio.culture
+			set_character_faith_with_conversion = title:c_munio.faith
+		}
+	}
+}
+#	c_biram filled below
+    title:c_damagaram = {
+	set_county_culture = title:c_munio.culture
+	set_county_faith = title:c_munio.faith
+	holder = {
+		set_culture = title:c_munio.culture
+		set_character_faith_with_conversion = title:c_munio.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_munio.culture
+			set_character_faith_with_conversion = title:c_munio.faith
+		}
+	}
+}
+    title:c_zamfara = {
+	set_county_culture = title:c_sokoto.culture
+	set_county_faith = title:c_sokoto.faith
+	holder = {
+		set_culture = title:c_sokoto.culture
+		set_character_faith_with_conversion = title:c_sokoto.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_sokoto.culture
+			set_character_faith_with_conversion = title:c_sokoto.faith
+		}
+	}
+}
+    title:c_maradi = {
+	set_county_culture = title:c_katsina.culture
+	set_county_faith = title:c_katsina.faith
+	holder = {
+		set_culture = title:c_katsina.culture
+		set_character_faith_with_conversion = title:c_katsina.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_katsina.culture
+			set_character_faith_with_conversion = title:c_katsina.faith
+		}
+	}
+}
+    title:c_baghena = {
+	set_county_culture = title:c_awkar.culture
+	set_county_faith = title:c_awkar.faith
+	holder = {
+		set_culture = title:c_awkar.culture
+		set_character_faith_with_conversion = title:c_awkar.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_awkar.culture
+			set_character_faith_with_conversion = title:c_awkar.faith
+		}
+	}
+}
+    title:c_ahaggar = {
+	set_county_culture = title:c_djanet.culture
+	set_county_faith = title:c_djanet.faith
+	holder = {
+		set_culture = title:c_djanet.culture
+		set_character_faith_with_conversion = title:c_djanet.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_djanet.culture
+			set_character_faith_with_conversion = title:c_djanet.faith
+		}
+	}
+}
+    title:c_ain_azawa = {
+	set_county_culture = title:c_air.culture
+	set_county_faith = title:c_air.faith
+	holder = {
+		set_culture = title:c_air.culture
+		set_character_faith_with_conversion = title:c_air.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_air.culture
+			set_character_faith_with_conversion = title:c_air.faith
+		}
+	}
+}
+    title:c_awlil = {
+	set_county_culture = title:c_dhraina.culture
+	set_county_faith = title:c_dhraina.faith
+	holder = {
+		set_culture = title:c_dhraina.culture
+		set_character_faith_with_conversion = title:c_dhraina.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_dhraina.culture
+			set_character_faith_with_conversion = title:c_dhraina.faith
+		}
+	}
+}
+    title:c_kladsko = {
+	set_county_culture = title:c_hradec.culture
+	set_county_faith = title:c_hradec.faith
+	holder = {
+		set_culture = title:c_hradec.culture
+		set_character_faith_with_conversion = title:c_hradec.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_hradec.culture
+			set_character_faith_with_conversion = title:c_hradec.faith
+		}
+	}
+}
+    title:c_ugocsa = {
+	set_county_culture = title:c_marmaros.culture
+	set_county_faith = title:c_marmaros.faith
+	holder = {
+		set_culture = title:c_marmaros.culture
+		set_character_faith_with_conversion = title:c_marmaros.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_marmaros.culture
+			set_character_faith_with_conversion = title:c_marmaros.faith
+		}
+	}
+}
+    title:c_eger = {
+	set_county_culture = title:c_hewes.culture
+	set_county_faith = title:c_hewes.faith
+}
+    title:c_devin = {
+	set_county_culture = title:c_nyitra.culture
+	set_county_faith = title:c_nyitra.faith
+	holder = {
+		set_culture = title:c_nyitra.culture
+		set_character_faith_with_conversion = title:c_nyitra.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_nyitra.culture
+			set_character_faith_with_conversion = title:c_nyitra.faith
+		}
+	}
+}
+	
+    title:c_quzlum = {
+	set_county_culture = title:c_cairo.culture
+	set_county_faith = title:c_cairo.faith
+	#holder = { #CMH removed to prevent conversion of Isma'ili characters to Ash'arism
+	#	set_culture = title:c_cairo.culture
+	#	set_character_faith_with_conversion = title:c_cairo.faith
+	#	every_courtier_or_guest = {
+	#		set_culture = title:c_cairo.culture
+	#		set_character_faith_with_conversion = title:c_cairo.faith
+	#	}
+	#}
+}
+    title:c_selima = {
+	set_county_culture = title:c_kharga.culture
+	set_county_faith = title:c_kharga.faith
+	holder = {
+		set_culture = title:c_kharga.culture
+		set_character_faith_with_conversion = title:c_kharga.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_kharga.culture
+			set_character_faith_with_conversion = title:c_kharga.faith
+		}
+	}
+}
+    title:c_nograd = {
+	set_county_culture = title:c_eger.culture
+	set_county_faith = title:c_eger.faith
+	#holder = { #CMH removed to prevent king of Hungary go slovak
+	#	set_culture = title:c_hont.culture
+	#	set_character_faith_with_conversion = title:c_hont.faith
+	#	every_courtier_or_guest = {
+	#		set_culture = title:c_hont.culture
+	#		set_character_faith_with_conversion = title:c_hont.faith
+	#	}
+	#}
+}
+    title:c_cea = {
+	set_county_culture = title:c_leon.culture
+	set_county_faith = title:c_leon.faith
+	#holder = { CMH removed
+	#	set_culture = title:c_leon.culture
+	#	set_character_faith_with_conversion = title:c_leon.faith
+	#	every_courtier_or_guest = {
+	#		set_culture = title:c_leon.culture
+	#		set_character_faith_with_conversion = title:c_leon.faith
+	#	}
+	#}
+}
+    title:c_lemos = {
+	set_county_culture = title:c_tui.culture
+	set_county_faith = title:c_tui.faith
+	holder = {
+		set_culture = title:c_tui.culture
+		set_character_faith_with_conversion = title:c_tui.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tui.culture
+			set_character_faith_with_conversion = title:c_tui.faith
+		}
+	}
+}
+    title:c_mondonedo = {
+	set_county_culture = title:c_santiago.culture
+	set_county_faith = title:c_santiago.faith
+	holder = {
+		set_culture = title:c_santiago.culture
+		set_character_faith_with_conversion = title:c_santiago.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_santiago.culture
+			set_character_faith_with_conversion = title:c_santiago.faith
+		}
+	}
+}
+    title:c_monzon = {
+	if = { limit = { game_start_date = 867.1.1 }
+		set_county_culture = culture:asturleonese
+	}
+}
+    title:c_lara = { #CMH edit
+	if = { limit = { game_start_date = 867.1.1 }
+		set_county_culture = culture:mozarab
+	}
+}
+    title:c_frias = {
+	if = { limit = { game_start_date = 867.1.1 }
+		set_county_culture = culture:asturleonese
+	}
+}
+    title:c_alava = {
+	set_county_culture = title:c_viscaya.culture
+	set_county_faith = title:c_viscaya.faith
+	holder = {
+		set_culture = title:c_viscaya.culture
+		set_character_faith_with_conversion = title:c_viscaya.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_viscaya.culture
+			set_character_faith_with_conversion = title:c_viscaya.faith
+		}
+	}
+}
+
+    title:c_pallars = {
+	set_county_culture = title:c_urgell.culture
+	set_county_faith = title:c_urgell.faith
+	holder = {
+		set_culture = title:c_urgell.culture
+		set_character_faith_with_conversion = title:c_urgell.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_urgell.culture
+			set_character_faith_with_conversion = title:c_urgell.faith
+		}
+	}
+}
+    title:c_moya = {
+	set_county_culture = title:c_valencia.culture
+	set_county_faith = title:c_valencia.faith
+	holder = {
+		set_culture = title:c_valencia.culture
+		set_character_faith_with_conversion = title:c_valencia.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_valencia.culture
+			set_character_faith_with_conversion = title:c_valencia.faith
+		}
+	}
+}
+    title:c_sogorbe = {
+	set_county_culture = title:c_valencia.culture
+	set_county_faith = title:c_valencia.faith
+	holder = {
+		set_culture = title:c_valencia.culture
+		set_character_faith_with_conversion = title:c_valencia.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_valencia.culture
+			set_character_faith_with_conversion = title:c_valencia.faith
+		}
+	}
+}
+    title:c_gandia = {
+	set_county_culture = title:c_valencia.culture
+	set_county_faith = title:c_valencia.faith
+	holder = {
+		set_culture = title:c_valencia.culture
+		set_character_faith_with_conversion = title:c_valencia.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_valencia.culture
+			set_character_faith_with_conversion = title:c_valencia.faith
+		}
+	}
+}
+    title:c_villena = {
+	set_county_culture = title:c_alicante.culture
+	set_county_faith = title:c_alicante.faith
+	holder = {
+		set_culture = title:c_alicante.culture
+		set_character_faith_with_conversion = title:c_alicante.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_alicante.culture
+			set_character_faith_with_conversion = title:c_alicante.faith
+		}
+	}
+}
+    title:c_caravaca = {
+	set_county_culture = title:c_murcia.culture
+	set_county_faith = title:c_murcia.faith
+	holder = {
+		set_culture = title:c_murcia.culture
+		set_character_faith_with_conversion = title:c_murcia.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_murcia.culture
+			set_character_faith_with_conversion = title:c_murcia.faith
+		}
+	}
+}
+    title:c_comares = {
+	set_county_culture = title:c_almeria.culture
+	set_county_faith = title:c_almeria.faith
+	holder = {
+		set_culture = title:c_almeria.culture
+		set_character_faith_with_conversion = title:c_almeria.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_almeria.culture
+			set_character_faith_with_conversion = title:c_almeria.faith
+		}
+	}
+}
+    title:c_ronda = {
+	set_county_culture = title:c_algeciras.culture
+	set_county_faith = title:c_algeciras.faith
+	holder = {
+		set_culture = title:c_algeciras.culture
+		set_character_faith_with_conversion = title:c_algeciras.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_algeciras.culture
+			set_character_faith_with_conversion = title:c_algeciras.faith
+		}
+	}
+}
+    title:c_carmona = {
+	set_county_culture = title:c_sevilla.culture
+	set_county_faith = title:c_sevilla.faith
+	holder = {
+		set_culture = title:c_sevilla.culture
+		set_character_faith_with_conversion = title:c_sevilla.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_sevilla.culture
+			set_character_faith_with_conversion = title:c_sevilla.faith
+		}
+	}
+}
+    title:c_cantillana = {
+	set_county_culture = title:c_sevilla.culture
+	set_county_faith = title:c_sevilla.faith
+	holder = {
+		set_culture = title:c_sevilla.culture
+		set_character_faith_with_conversion = title:c_sevilla.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_sevilla.culture
+			set_character_faith_with_conversion = title:c_sevilla.faith
+		}
+	}
+}
+    title:c_nablus = {
+	set_county_culture = title:c_jerusalem.culture
+	set_county_faith = title:c_jerusalem.faith
+	holder = {
+		set_culture = title:c_jerusalem.culture
+		set_character_faith_with_conversion = title:c_jerusalem.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jerusalem.culture
+			set_character_faith_with_conversion = title:c_jerusalem.faith
+		}
+	}
+}
+    title:c_latakia = {
+	set_county_culture = title:c_antiocheia.culture
+	set_county_faith = title:c_antiocheia.faith
+	holder = {
+		set_culture = title:c_antiocheia.culture
+		set_character_faith_with_conversion = title:c_antiocheia.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_antiocheia.culture
+			set_character_faith_with_conversion = title:c_antiocheia.faith
+		}
+	}
+}
+    title:c_hawz = {
+	set_county_culture = title:c_marrakesh.culture
+	set_county_faith = title:c_marrakesh.faith
+	holder = {
+		set_culture = title:c_marrakesh.culture
+		set_character_faith_with_conversion = title:c_marrakesh.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_marrakesh.culture
+			set_character_faith_with_conversion = title:c_marrakesh.faith
+		}
+	}
+}
+    title:c_aghuz = {
+	set_county_culture = title:c_asfi.culture
+	set_county_faith = title:c_asfi.faith
+	holder = {
+		set_culture = title:c_asfi.culture
+		set_character_faith_with_conversion = title:c_asfi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_asfi.culture
+			set_character_faith_with_conversion = title:c_asfi.faith
+		}
+	}
+}
+    title:c_sirwan = {
+	set_county_culture = title:c_agadir.culture
+	set_county_faith = title:c_agadir.faith
+	holder = {
+		set_culture = title:c_agadir.culture
+		set_character_faith_with_conversion = title:c_agadir.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_agadir.culture
+			set_character_faith_with_conversion = title:c_agadir.faith
+		}
+	}
+}
+    title:c_iligh = {
+	set_county_culture = title:c_ifni.culture
+	set_county_faith = title:c_ifni.faith
+	holder = {
+		set_culture = title:c_ifni.culture
+		set_character_faith_with_conversion = title:c_ifni.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_ifni.culture
+			set_character_faith_with_conversion = title:c_ifni.faith
+		}
+	}
+}
+    title:c_aqqa = {
+	set_county_culture = title:c_draa.culture
+	set_county_faith = title:c_draa.faith
+	holder = {
+		set_culture = title:c_draa.culture
+		set_character_faith_with_conversion = title:c_draa.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_draa.culture
+			set_character_faith_with_conversion = title:c_draa.faith
+		}
+	}
+}
+    title:c_warzazat = {
+	set_county_culture = title:c_tudgha.culture
+	set_county_faith = title:c_tudgha.faith
+	holder = {
+		set_culture = title:c_tudgha.culture
+		set_character_faith_with_conversion = title:c_tudgha.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tudgha.culture
+			set_character_faith_with_conversion = title:c_tudgha.faith
+		}
+	}
+}
+    title:c_azrou = {
+	set_county_culture = title:c_tadla.culture
+	set_county_faith = title:c_tadla.faith
+	holder = {
+		set_culture = title:c_tadla.culture
+		set_character_faith_with_conversion = title:c_tadla.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tadla.culture
+			set_character_faith_with_conversion = title:c_tadla.faith
+		}
+	}
+}
+    title:c_sefrou = {
+	set_county_culture = title:c_tadla.culture
+	set_county_faith = title:c_tadla.faith
+	holder = {
+		set_culture = title:c_tadla.culture
+		set_character_faith_with_conversion = title:c_tadla.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tadla.culture
+			set_character_faith_with_conversion = title:c_tadla.faith
+		}
+	}
+}
+    title:c_habt = {
+	set_county_culture = title:c_fes.culture
+	set_county_faith = title:c_fes.faith
+	holder = {
+		set_culture = title:c_fes.culture
+		set_character_faith_with_conversion = title:c_fes.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_fes.culture
+			set_character_faith_with_conversion = title:c_fes.faith
+		}
+	}
+}
+    title:c_saddina = {
+	set_county_culture = title:c_fes.culture
+	set_county_faith = title:c_fes.faith
+	holder = {
+		set_culture = title:c_fes.culture
+		set_character_faith_with_conversion = title:c_fes.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_fes.culture
+			set_character_faith_with_conversion = title:c_fes.faith
+		}
+	}
+}
+    title:c_garsif = {
+	set_county_culture = title:c_muluya.culture
+	set_county_faith = title:c_muluya.faith
+	holder = {
+		set_culture = title:c_muluya.culture
+		set_character_faith_with_conversion = title:c_muluya.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_muluya.culture
+			set_character_faith_with_conversion = title:c_muluya.faith
+		}
+	}
+}
+    title:c_debdou = {
+	set_county_culture = title:c_tlemcen.culture
+	set_county_faith = title:c_tlemcen.faith
+	holder = {
+		set_culture = title:c_tlemcen.culture
+		set_character_faith_with_conversion = title:c_tlemcen.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tlemcen.culture
+			set_character_faith_with_conversion = title:c_tlemcen.faith
+		}
+	}
+}
+    title:c_fakkan = {
+	set_county_culture = title:c_tahert.culture
+	set_county_faith = title:c_tahert.faith
+	holder = {
+		set_culture = title:c_tahert.culture
+		set_character_faith_with_conversion = title:c_tahert.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tahert.culture
+			set_character_faith_with_conversion = title:c_tahert.faith
+		}
+	}
+}
+    title:c_askedal = {
+	set_county_culture = title:c_tahert.culture
+	set_county_faith = title:c_tahert.faith
+	holder = {
+		set_culture = title:c_tahert.culture
+		set_character_faith_with_conversion = title:c_tahert.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tahert.culture
+			set_character_faith_with_conversion = title:c_tahert.faith
+		}
+	}
+}
+    title:c_sersou = {
+	set_county_culture = title:c_hodna.culture
+	set_county_faith = title:c_hodna.faith
+	holder = {
+		set_culture = title:c_hodna.culture
+		set_character_faith_with_conversion = title:c_hodna.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_hodna.culture
+			set_character_faith_with_conversion = title:c_hodna.faith
+		}
+	}
+}
+    title:c_wansharis = {
+	set_county_culture = title:c_algier.culture
+	set_county_faith = title:c_algier.faith
+	holder = {
+		set_culture = title:c_algier.culture
+		set_character_faith_with_conversion = title:c_algier.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_algier.culture
+			set_character_faith_with_conversion = title:c_algier.faith
+		}
+	}
+}
+    title:c_ainsefra = {
+	set_county_culture = title:c_figuig.culture
+	set_county_faith = title:c_figuig.faith
+	holder = {
+		set_culture = title:c_figuig.culture
+		set_character_faith_with_conversion = title:c_figuig.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_figuig.culture
+			set_character_faith_with_conversion = title:c_figuig.faith
+		}
+	}
+}
+    title:c_jebel_ksour = {
+	set_county_culture = title:c_figuig.culture
+	set_county_faith = title:c_figuig.faith
+	holder = {
+		set_culture = title:c_figuig.culture
+		set_character_faith_with_conversion = title:c_figuig.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_figuig.culture
+			set_character_faith_with_conversion = title:c_figuig.faith
+		}
+	}
+}
+    title:c_qalaat = {
+	set_county_culture = title:c_algier.culture
+	set_county_faith = title:c_algier.faith
+	holder = {
+		set_culture = title:c_algier.culture
+		set_character_faith_with_conversion = title:c_algier.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_algier.culture
+			set_character_faith_with_conversion = title:c_algier.faith
+		}
+	}
+}
+    title:c_kroumerie = {
+	set_county_culture = title:c_constantine.culture
+	set_county_faith = title:c_constantine.faith
+	holder = {
+		set_culture = title:c_constantine.culture
+		set_character_faith_with_conversion = title:c_constantine.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_constantine.culture
+			set_character_faith_with_conversion = title:c_constantine.faith
+		}
+	}
+}
+    title:c_badis = {
+	set_county_culture = title:c_biskra.culture
+	set_county_faith = title:c_biskra.faith
+	holder = {
+		set_culture = title:c_biskra.culture
+		set_character_faith_with_conversion = title:c_biskra.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_biskra.culture
+			set_character_faith_with_conversion = title:c_biskra.faith
+		}
+	}
+}
+    title:c_madila = {
+	set_county_culture = title:c_tabassa.culture
+	set_county_faith = title:c_tabassa.faith
+	holder = {
+		set_culture = title:c_tabassa.culture
+		set_character_faith_with_conversion = title:c_tabassa.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tabassa.culture
+			set_character_faith_with_conversion = title:c_tabassa.faith
+		}
+	}
+}
+    title:c_demmer = {
+	set_county_culture = title:c_jafara.culture
+	set_county_faith = title:c_jafara.faith
+	holder = {
+		set_culture = title:c_jafara.culture
+		set_character_faith_with_conversion = title:c_jafara.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jafara.culture
+			set_character_faith_with_conversion = title:c_jafara.faith
+		}
+	}
+}
+    title:c_yefren = {
+	set_county_culture = title:c_tripolitana.culture
+	set_county_faith = title:c_tripolitana.faith
+	holder = {
+		set_culture = title:c_tripolitana.culture
+		set_character_faith_with_conversion = title:c_tripolitana.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_tripolitana.culture
+			set_character_faith_with_conversion = title:c_tripolitana.faith
+		}
+	}
+}
+    title:c_makhil = {
+	set_county_culture = title:c_awjila.culture
+	set_county_faith = title:c_awjila.faith
+	holder = {
+		set_culture = title:c_awjila.culture
+		set_character_faith_with_conversion = title:c_awjila.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_awjila.culture
+			set_character_faith_with_conversion = title:c_awjila.faith
+		}
+	}
+}	
+    title:c_benghazi = {
+	set_county_culture = title:c_barqa.culture
+	set_county_faith = title:c_barqa.faith
+	holder = {
+		set_culture = title:c_barqa.culture
+		set_character_faith_with_conversion = title:c_barqa.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_barqa.culture
+			set_character_faith_with_conversion = title:c_barqa.faith
+		}
+	}
+}
+    title:c_minyanka = {
+	set_county_culture = title:c_bindugu.culture
+	set_county_faith = title:c_bindugu.faith
+	holder = {
+		set_culture = title:c_bindugu.culture
+		set_character_faith_with_conversion = title:c_bindugu.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_bindugu.culture
+			set_character_faith_with_conversion = title:c_bindugu.faith
+		}
+	}
+}
+    title:c_kala = {
+	set_county_culture = title:c_jenne.culture
+	set_county_faith = title:c_jenne.faith
+	holder = {
+		set_culture = title:c_jenne.culture
+		set_character_faith_with_conversion = title:c_jenne.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jenne.culture
+			set_character_faith_with_conversion = title:c_jenne.faith
+		}
+	}
+}
+    title:c_kirikongo = {
+	set_county_culture = title:c_dyulaso.culture
+	set_county_faith = title:c_dyulaso.faith
+	holder = {
+		set_culture = title:c_dyulaso.culture
+		set_character_faith_with_conversion = title:c_dyulaso.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_dyulaso.culture
+			set_character_faith_with_conversion = title:c_dyulaso.faith
+		}
+	}
+}
+    title:c_dokwi = {
+	set_county_culture = title:c_dyulaso.culture
+	set_county_faith = title:c_dyulaso.faith
+	holder = {
+		set_culture = title:c_dyulaso.culture
+		set_character_faith_with_conversion = title:c_dyulaso.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_dyulaso.culture
+			set_character_faith_with_conversion = title:c_dyulaso.faith
+		}
+	}
+}
+    title:c_gursi = {
+	set_county_culture = title:c_yatenga.culture
+	set_county_faith = title:c_yatenga.faith
+	holder = {
+		set_culture = title:c_yatenga.culture
+		set_character_faith_with_conversion = title:c_yatenga.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_yatenga.culture
+			set_character_faith_with_conversion = title:c_yatenga.faith
+		}
+	}
+}
+    title:c_hombori = {
+	set_county_culture = title:c_kurmina.culture
+	set_county_faith = title:c_kurmina.faith
+	holder = {
+		set_culture = title:c_kurmina.culture
+		set_character_faith_with_conversion = title:c_kurmina.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_kurmina.culture
+			set_character_faith_with_conversion = title:c_kurmina.faith
+		}
+	}
+}
+    title:c_oursi = {
+	set_county_culture = title:c_kurumba.culture
+	set_county_faith = title:c_kurumba.faith
+	holder = {
+		set_culture = title:c_kurumba.culture
+		set_character_faith_with_conversion = title:c_kurumba.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_kurumba.culture
+			set_character_faith_with_conversion = title:c_kurumba.faith
+		}
+	}
+}
+    title:c_zaran = {
+	set_county_culture = title:c_kurumba.culture
+	set_county_faith = title:c_kurumba.faith
+	holder = {
+		set_culture = title:c_kurumba.culture
+		set_character_faith_with_conversion = title:c_kurumba.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_kurumba.culture
+			set_character_faith_with_conversion = title:c_kurumba.faith
+		}
+	}
+}
+    title:c_bulsa = {
+	set_county_culture = title:c_wagadugu.culture
+	set_county_faith = title:c_wagadugu.faith
+	holder = {
+		set_culture = title:c_wagadugu.culture
+		set_character_faith_with_conversion = title:c_wagadugu.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_wagadugu.culture
+			set_character_faith_with_conversion = title:c_wagadugu.faith
+		}
+	}
+}
+    title:c_kayao = {
+	set_county_culture = title:c_wagadugu.culture
+	set_county_faith = title:c_wagadugu.faith
+	holder = {
+		set_culture = title:c_wagadugu.culture
+		set_character_faith_with_conversion = title:c_wagadugu.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_wagadugu.culture
+			set_character_faith_with_conversion = title:c_wagadugu.faith
+		}
+	}
+}
+    title:c_yendi = {
+	set_county_culture = title:c_dagomba.culture
+	set_county_faith = title:c_dagomba.faith
+	holder = {
+		set_culture = title:c_dagomba.culture
+		set_character_faith_with_conversion = title:c_dagomba.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_dagomba.culture
+			set_character_faith_with_conversion = title:c_dagomba.faith
+		}
+	}
+}
+    title:c_salaga = {
+	set_county_culture = title:c_dagomba.culture
+	set_county_faith = title:c_dagomba.faith
+	holder = {
+		set_culture = title:c_dagomba.culture
+		set_character_faith_with_conversion = title:c_dagomba.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_dagomba.culture
+			set_character_faith_with_conversion = title:c_dagomba.faith
+		}
+	}
+}
+    title:c_bouna = {
+	set_county_culture = title:c_wa.culture
+	set_county_faith = title:c_wa.faith
+	holder = {
+		set_culture = title:c_wa.culture
+		set_character_faith_with_conversion = title:c_wa.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_wa.culture
+			set_character_faith_with_conversion = title:c_wa.faith
+		}
+	}
+}
+    title:c_komoe = {
+	set_county_culture = title:c_loropeni.culture
+	set_county_faith = title:c_loropeni.faith
+	holder = {
+		set_culture = title:c_loropeni.culture
+		set_character_faith_with_conversion = title:c_loropeni.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_loropeni.culture
+			set_character_faith_with_conversion = title:c_loropeni.faith
+		}
+	}
+}
+    title:c_jebugu = {
+	set_county_culture = title:c_lobi.culture
+	set_county_faith = title:c_lobi.faith
+	holder = {
+		set_culture = title:c_lobi.culture
+		set_character_faith_with_conversion = title:c_lobi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_lobi.culture
+			set_character_faith_with_conversion = title:c_lobi.faith
+		}
+	}
+}
+    title:c_gueguere = {
+	set_county_culture = title:c_lobi.culture
+	set_county_faith = title:c_lobi.faith
+	holder = {
+		set_culture = title:c_lobi.culture
+		set_character_faith_with_conversion = title:c_lobi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_lobi.culture
+			set_character_faith_with_conversion = title:c_lobi.faith
+		}
+	}
+}
+    title:c_pura = {
+	set_county_culture = title:c_lobi.culture
+	set_county_faith = title:c_lobi.faith
+	holder = {
+		set_culture = title:c_lobi.culture
+		set_character_faith_with_conversion = title:c_lobi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_lobi.culture
+			set_character_faith_with_conversion = title:c_lobi.faith
+		}
+	}
+}
+    title:c_ago = {
+	set_county_culture = title:c_jimi.culture
+	set_county_faith = title:c_jimi.faith
+	holder = {
+		set_culture = title:c_jimi.culture
+		set_character_faith_with_conversion = title:c_jimi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jimi.culture
+			set_character_faith_with_conversion = title:c_jimi.faith
+		}
+	}
+}
+    title:c_lehane = {
+	set_county_culture = title:c_jimi.culture
+	set_county_faith = title:c_jimi.faith
+	holder = {
+		set_culture = title:c_jimi.culture
+		set_character_faith_with_conversion = title:c_jimi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jimi.culture
+			set_character_faith_with_conversion = title:c_jimi.faith
+		}
+	}
+}
+    title:c_kogori = {
+	set_county_culture = title:c_jimi.culture
+	set_county_faith = title:c_jimi.faith
+	holder = {
+		set_culture = title:c_jimi.culture
+		set_character_faith_with_conversion = title:c_jimi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jimi.culture
+			set_character_faith_with_conversion = title:c_jimi.faith
+		}
+	}
+}
+    title:c_madan = {
+	set_county_culture = title:c_jimi.culture
+	set_county_faith = title:c_jimi.faith
+	holder = {
+		set_culture = title:c_jimi.culture
+		set_character_faith_with_conversion = title:c_jimi.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_jimi.culture
+			set_character_faith_with_conversion = title:c_jimi.faith
+		}
+	}
+}
+    title:c_koima = {
+	set_county_culture = title:c_bura.culture
+	set_county_faith = title:c_bura.faith
+	holder = {
+		set_culture = title:c_bura.culture
+		set_character_faith_with_conversion = title:c_bura.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_bura.culture
+			set_character_faith_with_conversion = title:c_bura.faith
+		}
+	}
+}
+    title:c_sirba = {
+	set_county_culture = title:c_gurma.culture
+	set_county_faith = title:c_gurma.faith
+	holder = {
+		set_culture = title:c_gurma.culture
+		set_character_faith_with_conversion = title:c_gurma.faith
+		every_courtier_or_guest = {
+			set_culture = title:c_gurma.culture
+			set_character_faith_with_conversion = title:c_gurma.faith
+		}
+	}
+}
+#####MANUAL EDIT
+	title:c_igala = {
+		holder = {
+			set_culture = title:c_igbo.culture
+			set_character_faith_with_conversion = title:c_igbo.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_igbo.culture
+				set_character_faith_with_conversion = title:c_igbo.faith
+			}
+		}
+	}
+	title:c_dagomba = {
+		holder = {
+			set_culture = title:c_salaga.culture
+			set_character_faith_with_conversion = title:c_salaga.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_salaga.culture
+				set_character_faith_with_conversion = title:c_salaga.faith
+			}
+		}
+	}
+###### necessary fixes where IBL and BAP clash
+    title:c_upper_gurma = {
+		set_county_culture = title:c_kurmina.culture
+		set_county_faith = title:c_kurmina.faith
+		holder = {
+			set_culture = title:c_kurmina.culture
+			set_character_faith_with_conversion = title:c_kurmina.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_kurmina.culture
+				set_character_faith_with_conversion = title:c_kurmina.faith
+			}
+		}
+	}
+    title:c_oudalan = { 
+		set_county_culture = title:c_kurumba.culture
+		set_county_faith = title:c_kurumba.faith
+		holder = {
+			set_culture = title:c_kurumba.culture
+			set_character_faith_with_conversion = title:c_kurumba.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_kurumba.culture
+				set_character_faith_with_conversion = title:c_kurumba.faith
+			}
+		}
+	}
+    title:c_ouallam = { 
+		set_county_culture = title:c_kukiya.culture
+		set_county_faith = title:c_kukiya.faith
+		holder = {
+			set_culture = title:c_kukiya.culture
+			set_character_faith_with_conversion = title:c_kukiya.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_kukiya.culture
+				set_character_faith_with_conversion = title:c_kukiya.faith
+			}
+		}
+	}
+    title:c_say = { 
+		set_county_culture = title:c_bura.culture
+		set_county_faith = title:c_bura.faith
+		holder = {
+			set_culture = title:c_bura.culture
+			set_character_faith_with_conversion = title:c_bura.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_bura.culture
+				set_character_faith_with_conversion = title:c_bura.faith
+			}
+		}
+	}
+	title:c_tyendugu = {
+		set_county_culture = title:c_niani.culture
+		set_county_faith = title:c_niani.faith
+		holder = {
+			set_culture = title:c_niani.culture
+			set_character_faith_with_conversion = title:c_niani.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_niani.culture
+				set_character_faith_with_conversion = title:c_niani.faith
+			}
+		}
+	}
+    title:c_fakara = { 
+		set_county_culture = title:c_kukiya.culture
+		set_county_faith = title:c_kukiya.faith
+		holder = {
+			set_culture = title:c_kukiya.culture
+			set_character_faith_with_conversion = title:c_kukiya.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_kukiya.culture
+				set_character_faith_with_conversion = title:c_kukiya.faith
+			}
+		}
+	}
+    title:c_djaba = {
+		set_county_culture = title:c_zamtam.culture
+		set_county_faith = title:c_zamtam.faith
+		holder = {
+			set_culture = title:c_zamtam.culture
+			set_character_faith_with_conversion = title:c_zamtam.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_zamtam.culture
+				set_character_faith_with_conversion = title:c_zamtam.faith
+			}
+		}
+	}
+    title:c_arawan = {
+	set_county_culture = title:c_taghaza.culture
+	set_county_faith = title:c_taghaza.faith
+	holder = {
+		every_courtier_or_guest = {
+			set_culture = title:c_taghaza.culture
+			set_character_faith_with_conversion = title:c_taghaza.faith
+		}
+	}
+}
+###########
+	title:c_dadigar = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_garumele.culture
+            set_county_faith = title:c_garumele.faith
+            holder = {
+                set_culture = title:c_garumele.culture
+                set_character_faith_with_conversion = title:c_garumele.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_garumele.culture
+                    set_character_faith_with_conversion = title:c_garumele.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_katagum.culture
+            set_county_faith = title:c_katagum.faith
+            holder = {
+                set_culture = title:c_katagum.culture
+                set_character_faith_with_conversion = title:c_katagum.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_katagum.culture
+                    set_character_faith_with_conversion = title:c_katagum.faith
+                }
+            }
+        }
+    }
+	title:c_zamtam = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_garumele.culture
+            set_county_faith = title:c_garumele.faith
+            holder = {
+                set_culture = title:c_garumele.culture
+                set_character_faith_with_conversion = title:c_garumele.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_garumele.culture
+                    set_character_faith_with_conversion = title:c_garumele.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_katagum.culture
+            set_county_faith = title:c_katagum.faith
+            holder = {
+                set_culture = title:c_katagum.culture
+                set_character_faith_with_conversion = title:c_katagum.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_katagum.culture
+                    set_character_faith_with_conversion = title:c_katagum.faith
+                }
+            }
+        }
+    }
+    title:c_biram = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_garumele.culture
+            set_county_faith = title:c_garumele.faith
+            holder = {
+                set_culture = title:c_garumele.culture
+                set_character_faith_with_conversion = title:c_garumele.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_garumele.culture
+                    set_character_faith_with_conversion = title:c_garumele.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_katagum.culture
+            set_county_faith = title:c_katagum.faith
+            holder = {
+                set_culture = title:c_katagum.culture
+                set_character_faith_with_conversion = title:c_katagum.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_katagum.culture
+                    set_character_faith_with_conversion = title:c_katagum.faith
+                }
+            }
+        }
+    }
+    title:c_kilba = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_fika.culture
+            set_county_faith = title:c_fika.faith
+            holder = {
+                set_culture = title:c_fika.culture
+                set_character_faith_with_conversion = title:c_fika.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_fika.culture
+                    set_character_faith_with_conversion = title:c_fika.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_kwararafa.culture
+            set_county_faith = title:c_kwararafa.faith
+            holder = {
+                set_culture = title:c_kwararafa.culture
+                set_character_faith_with_conversion = title:c_kwararafa.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_kwararafa.culture
+                    set_character_faith_with_conversion = title:c_kwararafa.faith
+                }
+            }
+        }
+    }
+    title:c_pindiga = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_fika.culture
+            set_county_faith = title:c_fika.faith
+            holder = {
+                set_culture = title:c_fika.culture
+                set_character_faith_with_conversion = title:c_fika.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_fika.culture
+                    set_character_faith_with_conversion = title:c_fika.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_kwararafa.culture
+            set_county_faith = title:c_kwararafa.faith
+            holder = {
+                set_culture = title:c_kwararafa.culture
+                set_character_faith_with_conversion = title:c_kwararafa.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_kwararafa.culture
+                    set_character_faith_with_conversion = title:c_kwararafa.faith
+                }
+            }
+        }
+    }
+    title:c_kasar_chiki = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_bauchi.culture
+            set_county_faith = title:c_bauchi.faith
+            holder = {
+                set_culture = title:c_bauchi.culture
+                set_character_faith_with_conversion = title:c_bauchi.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_bauchi.culture
+                    set_character_faith_with_conversion = title:c_bauchi.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_kwararafa.culture
+            set_county_faith = title:c_kwararafa.faith
+            holder = {
+                set_culture = title:c_kwararafa.culture
+                set_character_faith_with_conversion = title:c_kwararafa.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_kwararafa.culture
+                    set_character_faith_with_conversion = title:c_kwararafa.faith
+                }
+            }
+        }
+    }
+    title:c_kalam = {
+        if = {
+            limit = { current_date < 867.1.2 }
+            set_county_culture = title:c_bauchi.culture
+            set_county_faith = title:c_bauchi.faith
+            holder = {
+                set_culture = title:c_bauchi.culture
+                set_character_faith_with_conversion = title:c_bauchi.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_bauchi.culture
+                    set_character_faith_with_conversion = title:c_bauchi.faith
+                }
+            }
+        }
+        else_if = {
+            limit = { current_date > 1066.1.1 }
+            set_county_culture = title:c_kwararafa.culture
+            set_county_faith = title:c_kwararafa.faith
+            holder = {
+                set_culture = title:c_kwararafa.culture
+                set_character_faith_with_conversion = title:c_kwararafa.faith
+                every_courtier_or_guest = {
+                    set_culture = title:c_kwararafa.culture
+                    set_character_faith_with_conversion = title:c_kwararafa.faith
+                }
+            }
+        }
+    }
+
+	#Two Lobi Fix
+	every_county = {
+		limit = {
+			culture = culture:lobi
+		}
+		set_county_culture = culture:kulango
+	}
+	every_living_character = {
+		limit = {
+			culture = culture:lobi
+		}
+		set_culture = culture:kulango
+	}
+	
+	#Other Fixes
+	#CMH
+	if = {
+		limit = { game_start_date = 867.1.1 }
+		character:163115 ?= {
+			set_culture = title:c_cairo.culture
+			set_character_faith_with_conversion = title:c_cairo.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_cairo.culture
+				set_character_faith_with_conversion = title:c_cairo.faith
+			}
+		}
+	}
+	#CMH RICE
+	if = {
+		limit = {
+			game_start_date = 867.1.1
+			has_global_variable = is_RICE_loaded
+		}
+		character:RICE_upper_egypt_012 ?= {
+			set_culture = title:c_awjila.culture
+			set_character_faith_with_conversion = title:c_awjila.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_awjila.culture
+				set_character_faith_with_conversion = title:c_awjila.faith
+			}
+		}
+	}
+}

@@ -1,0 +1,185 @@
+﻿KM_is_loaded = { always = yes }
+
+KM_can_be_knight_trigger = {
+	OR = {
+		$ARMY_OWNER$ = {
+			is_ai = yes
+		}
+		is_acclaimed = yes
+		has_variable = kmc_manually_allowed
+		NOR = {
+			AND = {
+				dynasty = $ARMY_OWNER$.dynasty
+				has_global_variable = kmc_dynasty_cannot_be_knight
+			}
+			AND = {
+				house = $ARMY_OWNER$.house
+				has_global_variable = kmc_house_cannot_be_knight
+			}
+			AND = {
+				is_spouse_of = $ARMY_OWNER$
+				has_global_variable = kmc_spouses_cannot_be_knight
+			}
+			AND = {
+				OR = {
+					is_child_of = $ARMY_OWNER$
+					is_grandchild_of = $ARMY_OWNER$
+				}
+				has_global_variable = kmc_children_cannot_be_knight
+			}
+			AND = {
+				any_spouse = {
+					OR = {
+						is_child_of = $ARMY_OWNER$
+						is_grandchild_of = $ARMY_OWNER$
+					}
+
+				}
+				has_global_variable = kmc_child_spouses_cannot_be_knight
+			}
+			AND = {
+				is_player_heir_of = $ARMY_OWNER$
+				has_global_variable = kmc_player_heir_cannot_be_knight
+			}
+			AND = {
+				OR = {
+					has_relation_lover = $ARMY_OWNER$
+					has_relation_soulmate = $ARMY_OWNER$
+					has_secret_relation_lover = $ARMY_OWNER$
+					has_secret_relation_soulmate = $ARMY_OWNER$
+				}
+				has_global_variable = kmc_lover_cannot_be_knight
+			}
+			AND = {
+				OR = {
+					is_councillor_of = $ARMY_OWNER$
+				}
+				has_global_variable = kmc_councillors_cannot_be_knight
+			}
+			AND = {
+				has_any_court_position = yes
+				NOR = {
+					has_court_position = bodyguard_court_position
+					has_court_position = garuda_court_position
+				}
+				has_global_variable = kmc_court_position_cannot_be_knight
+			}
+			AND = {
+				is_landed = no
+				has_global_variable = kmc_unlanded_cannot_be_knight
+			}
+			AND = {
+				is_lowborn = no
+				has_global_variable = kmc_highborn_cannot_be_knight
+			}
+			AND = {
+				is_lowborn = yes
+				has_global_variable = kmc_lowborn_cannot_be_knight
+			}
+			AND = {
+				is_ruler = yes
+				is_landed = yes
+				#highest_held_title_tier >= tier_barony
+				has_global_variable = kmc_landed_cannot_be_knight
+			}
+			#AND = { #CMH replaced with kmc_infidel_cannot_be_knight see below
+			#	is_landed = yes
+			#	highest_held_title_tier <= tier_barony
+			#	has_global_variable = kmc_barons_cannot_be_knight
+			#}
+			AND = {
+				prowess < 5
+				has_global_variable = kmc_terrible_fighter_cannot_be_knight
+			}
+			AND = {
+				prowess >= 5
+				prowess <= 8
+				has_global_variable = kmc_poor_fighter_cannot_be_knight
+			}
+			AND = {
+				prowess >= 9
+				prowess <= 12
+				has_global_variable = kmc_average_fighter_cannot_be_knight
+			}
+			AND = {
+				prowess >= 13
+				prowess <= 16
+				has_global_variable = kmc_good_fighter_cannot_be_knight
+			}
+			AND = {
+				prowess > 16
+				has_global_variable = kmc_excellent_fighter_cannot_be_knight
+			}
+			AND = {
+				OR = {
+					has_trait = wounded
+					has_trait = infirm
+					has_trait = maimed
+				}
+				has_global_variable = kmc_wounded_cannot_be_knight
+			}
+			#CMH Additions
+			AND = {
+				has_trait = pregnant
+				has_global_variable = kmc_pregnant_cannot_be_knight
+			}
+			AND = {
+				NOT = { religion = $ARMY_OWNER$.religion }
+				#faith = {
+				#	faith_hostility_level = {
+				#		target = $ARMY_OWNER$.faith
+				#		value <= faith_hostile_level
+				#	}
+				#}
+				has_global_variable = kmc_infidel_cannot_be_knight
+			}
+		}
+	}
+}
+
+can_be_knight_trigger = {
+	is_hostage = no
+	trigger_if = {
+		limit = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = minimum_prowess_for_knights
+			}
+		}
+		prowess >= 12
+	}
+	can_be_warrior_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+	trigger_if = {
+		limit = {
+			OR = {
+				has_trait = devoted
+				is_clergy = yes
+			}
+		}
+		OR = {
+			faith = { has_doctrine_parameter = clergy_can_fight }
+			culture = { has_cultural_parameter = culture_clergy_can_fight }
+			AND = {
+				$ARMY_OWNER$.culture = {
+					has_cultural_parameter = high_prowess_ignores_knight_restrictions
+				}
+				prowess >= 10
+			}
+		}
+	}
+	OR = {
+		AND = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = high_prowess_ignores_knight_restrictions
+			}
+			prowess >= 10
+		}
+		has_trait = order_member # Order Members will fight for their faith even if their faith says no
+		NOR = {
+			has_trait = blind
+			has_court_position = master_assassin_court_position #FP3 addition
+		}
+	}
+	is_ai = yes
+	#KMC Conditions
+	KM_can_be_knight_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+}

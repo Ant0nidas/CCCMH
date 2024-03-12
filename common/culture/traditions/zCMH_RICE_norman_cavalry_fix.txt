@@ -1,0 +1,270 @@
+﻿##CMH Double Norman Knight Fix
+tradition_RICE_adventurers_and_aristocrats = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = RICE_adventure.dds
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# Only available after Historia Normannorum is done
+		has_global_variable = RICE_normandy_historia_normannorum_done
+		# Not shown if Norman struggle has ended successfully
+		NOR = {
+			has_global_variable = RICE_normandy_ending_norman_conquest
+			has_global_variable = RICE_normandy_ending_norman_assimilation
+		}
+		# GLOBAL VARIABLE TO REMOVE
+	}
+
+	can_pick = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# GLOBAL VARIABLE TO REMOVE
+	}
+
+
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.15
+	}
+	
+	parameters = {
+		rice_norman_adventurers = yes
+		culture_can_raid_at_sea_even_if_feudal = yes
+		wanderers_gain_extra_combat_skills = yes
+		rice_norman_mechanic_2 = yes
+		unlock_maa_norman_knights = yes
+		#rice_cheaper_normandy_settlers = yes
+		#unlock_maa_varangian_veterans = yes
+		# Concubinage
+	}
+
+	character_modifier = {
+		knight_effectiveness_mult = 0.05
+		diplomatic_range_mult = 0.1
+		learn_language_scheme_power_mult = 0.1
+		character_travel_safety_mult = 0.05
+	}	
+
+	#county_modifier = {	
+	#}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = { # AAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_spiritual_or_courtly_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_RICE_adventurers_and_aristocrats_military = {
+	category = regional
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = RICE_adventure.dds
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# Only available after Historia Normannorum is done
+		has_global_variable = RICE_normandy_historia_normannorum_done
+		# Only available if Norman struggle ended in conquest
+		has_global_variable = RICE_normandy_ending_norman_conquest
+	}
+
+	can_pick = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# GLOBAL VARIABLE TO REMOVE
+	}
+
+
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.15
+	}
+	
+	parameters = {
+		rice_norman_adventurers = yes
+		wanderers_gain_extra_combat_skills = yes
+		unlock_maa_norman_knights = yes
+	}
+
+	character_modifier = {
+		knight_effectiveness_mult = 0.15
+		#knight_limit = 1
+		vassal_levy_contribution_mult = 0.1
+		diplomatic_range_mult = 0.1
+		learn_language_scheme_power_mult = 0.1
+		character_travel_safety_mult = 0.05
+	}	
+
+	county_modifier = {
+		castle_holding_holding_build_speed = -0.05
+		castle_holding_holding_build_gold_cost = -0.05
+		castle_holding_build_speed = -0.05
+		castle_holding_build_gold_cost = -0.05
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = { # AAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_spiritual_or_courtly_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_RICE_adventurers_and_aristocrats_culture = {
+	category = regional
+
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = RICE_adventure.dds
+	}
+
+	is_shown = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# Only available after Historia Normannorum is done
+		has_global_variable = RICE_normandy_historia_normannorum_done
+		# Only available if Norman struggle ended in assimilation
+		has_global_variable = RICE_normandy_ending_norman_assimilation
+	}
+
+	can_pick = {
+		OR = {
+			this = culture:norman
+			any_parent_culture_or_above = {
+				this = culture:norman
+			}
+		}
+		# GLOBAL VARIABLE TO REMOVE
+	}
+
+
+	culture_modifier = {
+		cultural_acceptance_gain_mult = 0.15
+	}
+	
+	parameters = {
+		rice_norman_adventurers = yes
+		wanderers_gain_extra_economic_skills = yes
+		unlock_maa_norman_knights = yes
+	}
+
+	character_modifier = {
+		knight_effectiveness_mult = 0.05
+		vassal_tax_contribution_mult = 0.1
+		diplomatic_range_mult = 0.1
+		learn_language_scheme_power_mult = 0.3
+		character_travel_safety_mult = 0.05
+	}	
+
+	county_modifier = {
+		city_holding_build_speed = -0.1
+		city_holding_build_gold_cost = -0.1
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = { # AAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bureaucratic_spiritual_or_courtly_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}

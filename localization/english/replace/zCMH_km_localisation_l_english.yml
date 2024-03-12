@@ -1,0 +1,11 @@
+﻿l_english:
+
+ kmc_toggle_barons_cannot_be_knight: "$accolade_infidels$"
+ kmc_toggle_barons_cannot_be_knight_tt: "If checked, characters which follow a different [religion|E] can serve as knights."
+ 
+ # Traits
+ kmc_toggle_wounded_cannot_be_knight: "$trait_wounded_1$"
+ kmc_toggle_wounded_cannot_be_knight_tt: "If checked, wounded, maimed and infirm characters can serve as knights."
+ 
+ kmc_toggle_pregnant_cannot_be_knight: "$trait_pregnant$"
+ kmc_toggle_pregnant_cannot_be_knight_tt: "If checked, pregnant characters can serve as knights."

@@ -1,0 +1,30 @@
+﻿#CMH modified code originally by Princess Stabbity's Basic Nessassities - Happy Heraldry
+CMH_coa_modify_cadet_coa = {
+	house_head = {
+		capital_barony = {
+			save_scope_as = coa_capital
+		}
+	}
+	if = {
+		limit = {
+			current_year < 1150
+			house_head = {
+				has_religion = religion:christianity_religion
+				capital_province = { geographical_region = world_europe	}
+			}
+		}
+		set_coa = scope:coa_capital
+	}
+	else_if = {
+		limit = {
+			NAND = {
+				current_year >= 1150
+				house_head = {
+					has_religion = religion:christianity_religion
+					capital_province = { geographical_region = world_europe	}
+				}
+			}
+		}
+		generate_coa = yes
+	}
+}

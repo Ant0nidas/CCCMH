@@ -1,0 +1,15 @@
+﻿CMH_coa_rule = {
+	default = CMH_coa_rule_enabled
+
+	CMH_coa_rule_enabled = {
+	}
+
+	CMH_coa_rule_disabled = {
+	}
+}
+
+epe_clothes_sickness = {
+	default = never_epe_clothes_sickness
+	default_epe_clothes_sickness = {}
+	never_epe_clothes_sickness = {}
+}

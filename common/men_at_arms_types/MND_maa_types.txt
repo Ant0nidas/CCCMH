@@ -1,0 +1,1428 @@
+﻿#CMH: IBL + MND
+longbowmen = {
+	type = archers
+	can_recruit = {
+		culture = {
+			has_cultural_parameter = unlock_maa_longbowmen
+		}
+	}
+	
+	damage = 20
+	toughness = 8
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { damage = 12 toughness = 4 }
+		dry_hills = { damage = 12 toughness = 4 }
+		mountains = { damage = 12 toughness = 8 } #added
+		desert_mountains = { damage = 12 toughness = 8 } #added
+		#forest and taiga removed, mountains added.
+	}
+
+	counters = {
+		skirmishers = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = longbowmen_recruitment_cost }
+	low_maintenance_cost = { gold = longbowmen_low_maint_cost }
+	high_maintenance_cost = { gold = longbowmen_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = bowmen
+}
+
+goedendag = {
+	type = skirmishers
+	
+	damage = 13
+	toughness = 18
+	pursuit = 0
+	screen = 16
+	
+	counters = {
+		heavy_infantry = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = goedendag_recruitment_cost }
+	low_maintenance_cost = { gold = goedendag_low_maint_cost }
+	high_maintenance_cost = { gold = goedendag_high_maint_cost }
+	
+	stack = 150
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+gendarme = {
+	type = heavy_cavalry
+	
+	damage = 125
+	toughness = 40
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		savanna = { damage = 30 }
+		hills = { damage = -10 }
+		dry_hills = { damage = -10 }
+		forest = { damage = -20 pursuit = -10 } #added
+		taiga = { damage = -20 pursuit = -10 }	#added
+		jungle = { damage = -20 pursuit = -10 } #increased
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		high_boreal = { damage = -30 }
+		wetlands = { damage = -75 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+
+	buy_cost = { gold = gendarme_recruitment_cost }
+	low_maintenance_cost = { gold = gendarme_low_maint_cost }
+	high_maintenance_cost = { gold = gendarme_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+chasseur = {
+	type = light_cavalry
+	
+	damage = 40
+	toughness = 15
+	pursuit = 40
+	screen = 15
+	
+	terrain_bonus = {
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		savanna = { damage = 10 }
+		desert = { damage = 10 }
+		hills = { damage = -5 }
+		dry_hills = { damage = -5 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		mountains = { damage = -25 }
+		desert_mountains = { damage = -25 }
+		wetlands = { damage = -30 toughness = -10 pursuit = -25 screen = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+
+	buy_cost = { gold = chasseur_recruitment_cost }
+	low_maintenance_cost = { gold = chasseur_low_maint_cost }
+	high_maintenance_cost = { gold = chasseur_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+caballero = {
+	type = light_cavalry
+	
+	damage = 22
+	toughness = 16
+	pursuit = 30
+	screen = 50
+	
+	terrain_bonus = {
+		hills = { damage = 15 toughness = 10 }
+		dry_hills = { damage = 15 toughness = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		savanna = { damage = 10 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		mountains = { damage = -8 pursuit = -10 }
+		desert_mountains = { damage = -12 pursuit = -20 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -20 screen = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+
+	buy_cost = { gold = caballero_recruitment_cost }
+	low_maintenance_cost = { gold = caballero_low_maint_cost }
+	high_maintenance_cost = { gold = caballero_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 20] }
+	icon = light_cavalry
+}
+
+monaspa = {
+	type = heavy_cavalry
+	
+	damage = 110
+	toughness = 30
+	pursuit = 25
+	screen = 10
+	
+	terrain_bonus = {
+		hills = { damage = 20 pursuit = 10 }
+		dry_hills = { damage = 10 pursuit = 5 }
+		mountains = { damage = 20 pursuit = 10 }
+		forest = { damage = -30 pursuit = -10 } #added
+		taiga = { damage = -30 pursuit = -10 }	#added
+		jungle = { damage = -30 pursuit = -10 } #added
+		desert_mountains = { damage = -30 }
+		wetlands = { damage = -80 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -10 toughness = -5 }
+		harsh_winter = { damage = -20 toughness = -5 }
+	}
+	
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_monaspa }
+	}
+
+	buy_cost = { gold = monaspa_recruitment_cost }
+	low_maintenance_cost = { gold = monaspa_low_maint_cost }
+	high_maintenance_cost = { gold = monaspa_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+
+cataphract = {
+	type = heavy_cavalry
+	
+	damage = 120
+	toughness = 35
+	pursuit = 25
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		savanna = { damage = 30 }
+		hills = { damage = -10 }
+		dry_hills = { damage = -10 }
+		forest = { damage = -20 pursuit = -10 } #added
+		taiga = { damage = -20 pursuit = -10 }	#added
+		jungle = { damage = -20 pursuit = -10 } #added
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		wetlands = { damage = -80 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+	
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_cataphract }
+	}
+
+	buy_cost = { gold = cataphract_recruitment_cost }
+	low_maintenance_cost = { gold = cataphract_low_maint_cost }
+	high_maintenance_cost = { gold = cataphract_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+hobelar = {
+	type = light_cavalry
+	
+	damage = 22
+	toughness = 15
+	pursuit = 50
+	screen = 30
+	
+	terrain_bonus = {
+		forest = { damage = 15 }
+		hills = { damage = 10 }
+		dry_hills = { damage = 10 }
+		jungle = { damage = -5 pursuit = -10 } #added
+		mountains = { damage = -10 pursuit = -30 }
+		high_boreal = { damage = -5 pursuit = -15 }
+		desert_mountains = { damage = -15 pursuit = -30 }
+		wetlands = { damage = -10 pursuit = -20 screen = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 }
+	}
+
+	buy_cost = { gold = hobelar_recruitment_cost }
+	low_maintenance_cost = { gold = hobelar_low_maint_cost }
+	high_maintenance_cost = { gold = hobelar_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+horse_archers = {
+	type = archer_cavalry
+	
+	damage = 45
+	toughness = 20
+	pursuit = 40
+	screen = 30
+	
+	terrain_bonus = {
+		steppe = { damage = 45 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		savanna = { damage = 20 }
+		forest = { damage = -20 pursuit = -20 } #added
+		taiga = { damage = -20 pursuit = -20 } #added
+		jungle = { damage = -20 pursuit = -20 }
+		wetlands = { damage = -30 pursuit = -30 }
+		mountains = { damage = -30 pursuit = -30 }
+		desert_mountains = { damage = -30 pursuit = -30 }
+	}
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_horse_archers }
+	}
+
+	buy_cost = { gold = horse_archers_recruitment_cost }
+	low_maintenance_cost = { gold = horse_archers_low_maint_cost }
+	high_maintenance_cost = { gold = horse_archers_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = horse_archers
+}
+
+mulaththamun = { #Murabit Cavalry
+	type = light_cavalry
+	
+	damage = 22
+	toughness = 15
+	pursuit = 30
+	screen = 40
+	
+	terrain_bonus = {
+		drylands = { damage = 10 toughness = 5 screen = 10 pursuit = 5 }
+		savanna = { damage = 10 toughness = 5 screen = 10 pursuit = 5 }
+		desert = { damage = 10 toughness = 5 screen = 20 pursuit = 10 }
+		plains = { damage = 10 toughness = 3 screen = 5 pursuit = 5 }
+		oasis = { damage = 10 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		mountains = { damage = -8 pursuit = -10 }
+		high_boreal = { damage = -12 pursuit = -15 }
+		desert_mountains = { damage = -12 pursuit = -20 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -20 screen = -20
+		}
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_mulaththamun }
+	}
+
+	buy_cost = { gold = mulaththamun_recruitment_cost }
+	low_maintenance_cost = { gold = mulaththamun_low_maint_cost }
+	high_maintenance_cost = { gold = mulaththamun_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 20] }
+	icon = light_cavalry
+}
+
+
+archers_of_the_nile = { #Nile Archers
+	type = archers
+	
+	damage = 30
+	toughness = 14
+	pursuit = 10
+	screen = 10
+	
+	terrain_bonus = {
+		floodplains = { damage = 15 toughness = 15 pursuit = 10 screen = 10 }
+		oasis = { damage = 15 pursuit = 5 screen = 5 }
+		hills = { damage = 2 toughness = 1 } #added
+		mountains = { damage = 2 toughness = 4 } #added
+		desert_mountains = { damage = 2 toughness = 4 } #added
+		drylands = { damage = 10 toughness = 10 } #added
+		savanna = { damage = 10 toughness = 10 }
+		desert = { damage = -5 toughness = -5 }
+	}
+
+	counters = {
+		skirmishers = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_archers_of_the_nile }
+	}
+
+	buy_cost = { gold = archers_of_the_nile_recruitment_cost }
+	low_maintenance_cost = { gold = archers_of_the_nile_low_maint_cost }
+	high_maintenance_cost = { gold = archers_of_the_nile_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = bowmen
+}
+
+paiks = { #Indian Footmen - carrying bows but also swords and spears.
+	type = archers
+	
+	damage = 28
+	toughness = 16
+	pursuit = 10
+	screen = 10
+	
+	terrain_bonus = {
+		jungle = { toughness = 15 screen = 10 }
+		mountains = { damage = 10 toughness = 8 } #added
+		desert_mountains = { damage = 10 toughness = 8 } #added
+		hills = { damage = 10 toughness = 4 } #changed
+		dry_hills { damage = 10 toughness = 4 }
+	}
+
+	counters = {
+		elephant_cavalry = 1
+	}
+
+	buy_cost = { gold = paiks_recruitment_cost }
+	low_maintenance_cost = { gold = paiks_low_maint_cost }
+	high_maintenance_cost = { gold = paiks_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score - 40] }
+	icon = bowmen
+}
+
+hussar = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 15
+	pursuit = 60
+	screen = 20
+	
+	terrain_bonus = {
+		plains = { damage = 15 }
+		drylands = { damage = 15 }
+		savanna = { damage = 15 }
+		hills = { damage = -15 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		high_boreal = { damage = -15 pursuit = -20 }
+		mountains = { damage = -15 pursuit = -40 }
+		desert_mountains = { damage = -20 pursuit = -50 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -50 screen = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 }
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_hussar }
+	}
+
+	buy_cost = { gold = hussar_recruitment_cost }
+	low_maintenance_cost = { gold = hussar_low_maint_cost }
+	high_maintenance_cost = { gold = hussar_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 10] }
+	icon = light_cavalry
+}
+
+horn_warrior = {
+	type = skirmishers
+	
+	damage = 12
+	toughness = 16
+	pursuit = 0
+	screen = 20
+	
+	terrain_bonus = {
+		mountains = { damage = 10 toughness = 10 }
+		desert_mountains = { damage = 10 toughness = 10 }
+		hills = { damage = 4 toughness = 6 }
+		dry_hills = { damage = 6 toughness = 8 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_horn_warrior }
+	}
+
+	buy_cost = { gold = horn_warrior_recruitment_cost }
+	low_maintenance_cost = { gold = horn_warrior_low_maint_cost }
+	high_maintenance_cost = { gold = horn_warrior_high_maint_cost }
+	
+	stack = 150 #was 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+bush_hunter = {
+	type = archers
+	
+	damage = 30
+	toughness = 12
+	pursuit = 5
+	screen = 0
+	
+	terrain_bonus = {
+		jungle = { damage = 8 toughness = 6 } #changed
+		forest = { damage = 8 toughness = 6 } #changed
+		hills = { damage = 8 toughness = 4 }
+		dry_hills = { damage = 8 toughness = 4 }
+	}
+
+	counters = {
+		skirmishers = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_bush_hunter }
+	}
+
+	buy_cost = { gold = bush_hunter_recruitment_cost }
+	low_maintenance_cost = { gold = bush_hunter_low_maint_cost }
+	high_maintenance_cost = { gold = bush_hunter_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = bowmen
+}
+
+shomer = {
+	type = skirmishers
+	
+	damage = 10
+	toughness = 20 #was 24
+	pursuit = 0
+	screen = 40
+	
+	counters = {
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_shomer }
+	}
+
+	buy_cost = { gold = shomer_recruitment_cost }
+	low_maintenance_cost = { gold = shomer_low_maint_cost }
+	high_maintenance_cost = { gold = shomer_high_maint_cost }
+	
+	stack = 150
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+sahel_horsemen = {
+	type = light_cavalry
+	
+	damage = 22
+	toughness = 15
+	pursuit = 30
+	screen = 30
+	
+	terrain_bonus = {
+		drylands = { damage = 15 toughness = 3 }
+		savanna = { damage = 15 toughness = 3 }
+		floodplains = { damage = 15 toughness = 3 }
+		desert = { damage = 10 }
+		oasis = { damage = 10 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		hills = { damage = -10 pursuit = -10 }
+		dry_hills = { damage = -8 pursuit = -10 }
+		high_boreal = { damage = -15 pursuit = -20 }
+		desert_mountains = { damage = -10 pursuit = -20 }
+		mountains = { damage = -15 pursuit = -20 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -30 screen = -30 }
+	}
+
+	counters = {
+		archers = 1
+		heavy_infantry = 1
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+
+	buy_cost = { gold = sahel_rider_recruitment_cost }
+	low_maintenance_cost = { gold = sahel_rider_low_maint_cost }
+	high_maintenance_cost = { gold = sahel_rider_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 30] }
+	icon = light_cavalry
+}
+
+guinea_warrior = { #AKA Guinean uplander
+	type = skirmishers
+	
+	damage = 18
+	toughness = 14
+	pursuit = 0
+	screen = 20
+	
+	terrain_bonus = {
+		forest = { damage = 10 toughness = 8 }
+		hills = { damage = 6 toughness = 4 }
+		dry_hills = { damage = 6 toughness = 4 }
+		drylands = { damage = 6 toughness = 4 }
+		savanna = { damage = 6 toughness = 4 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_guinea_warrior }
+	}
+
+	buy_cost = { gold = guinea_warrior_recruitment_cost }
+	low_maintenance_cost = { gold = guinea_warrior_low_maint_cost }
+	high_maintenance_cost = { gold = guinea_warrior_high_maint_cost }
+	
+	stack = 150 #was 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+sarawit = { #AKA Ethiopian mountaineer
+	type = heavy_infantry
+	
+	damage = 32
+	toughness = 26
+	pursuit = 0
+	screen = 10
+	
+	terrain_bonus = {
+		mountains = { damage = 12 toughness = 10 }
+		desert_mountains = { damage = 10 toughness = 8 }
+		hills = { damage = 8 toughness = 5 }
+		dry_hills = { damage = 8 toughness = 5 }
+		drylands = { screen = -10 }
+		savanna =  { screen = -10 }
+		desert = { toughness = -10 screen = -10 }
+	}
+	
+	counters = {
+		pikemen = 1
+	}
+	
+	buy_cost = { gold = sarawit_recruitment_cost }
+	low_maintenance_cost = { gold = sarawit_low_maint_cost }
+	high_maintenance_cost = { gold = sarawit_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_infantry
+}
+
+abudrar = { #AKA Jabali - Berber mountaineer
+	type = skirmishers
+	
+	damage = 16
+	toughness = 16
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		desert_mountains = { damage = 10 toughness = 8 }
+		mountains = { damage = 8 toughness = 6 }
+		hills = { damage = 8 toughness = 6 }
+		dry_hills = { damage = 8 toughness = 6 }
+		desert = { pursuit = -10 screen = -10 }
+	}
+	
+	counters = {
+		light_cavalry = 1
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_abudrar }
+	}
+	
+	buy_cost = { gold = abudrar_recruitment_cost }
+	low_maintenance_cost = { gold = abudrar_low_maint_cost }
+	high_maintenance_cost = { gold = abudrar_high_maint_cost }
+	
+	stack = 150
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+chu_ko_nu = {
+	type = archers
+	
+	damage = 30
+	toughness = 20
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 4 } #changed
+		dry_hills = { damage = 10 toughness = 4 }
+		mountains = { damage = 10 toughness = 8 } #changed
+		desert_mountains = { damage = 10 toughness = 8 } #changed
+		high_boreal = { toughness = 4 }
+	}
+	
+	counters = {
+		skirmishers = 1
+		archer_cavalry = 0.5
+	}
+	
+	buy_cost = { gold = chu_ko_nu_recruitment_cost }
+	low_maintenance_cost = { gold = chu_ko_nu_low_maint_cost }
+	high_maintenance_cost = { gold = chu_ko_nu_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = crossbowmen
+}
+
+guanch_vaulter = {
+	type = skirmishers
+	
+	damage = 10
+	toughness = 12
+	pursuit = 15
+	screen = 20
+	siege_value = 0.1
+	
+	terrain_bonus = {
+		hills = { damage = 4 toughness = 6 }
+		dry_hills = { damage = 4 toughness = 6 }
+		mountains = { damage = 4 pursuit = 6 }
+		desert_mountains = { damage = 4 pursuit = 6 }
+		wetlands = { damage = 4 pursuit = 6 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+	}
+
+	buy_cost = { gold = guanch_vaulter_recruitment_cost }
+	low_maintenance_cost = { gold = guanch_vaulter_low_maint_cost }
+	high_maintenance_cost = { gold = guanch_vaulter_high_maint_cost }
+	
+	
+	stack = 150
+	ai_quality = { value = culture_ai_weight_skirmishers }
+	icon = skirmishers
+}
+
+jomsviking_pirates = {
+	type = skirmishers
+	
+	can_recruit = { always = no }
+
+	damage = 25 #was 30
+	toughness = 20 #was 30
+	pursuit = 40
+	screen = 40
+	
+	counters = {
+		heavy_infantry = 1
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = 8 pursuit = 8 }
+		harsh_winter = { damage = 8 pursuit = 8 }
+	}
+
+	buy_cost = { gold = jomsviking_pirates_recruitment_cost }
+	low_maintenance_cost = { gold = jomsviking_pirates_low_maint_cost }
+	high_maintenance_cost = { gold = jomsviking_pirates_high_maint_cost }
+	
+	stack = 150
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = jomsviking_pirates
+}
+
+accolade_maa_archers = {
+	type = archers
+	icon = bowmen
+
+	can_recruit = {
+		any_active_accolade = { 
+			primary_type = {
+				this = accolade_type:archer_attribute
+			}
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 30
+	toughness = 15
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { damage = 20 toughness = 8 }
+		dry_hills = { damage = 20 toughness = 8 }
+		mountains = { damage = 20 toughness = 12 } #added
+		desert_mountains = { damage = 20 toughness = 12 } #added
+		high_boreal = { toughness = 8 }
+	}
+
+	counters = {
+		skirmishers = 2
+	}
+
+	buy_cost = { gold = accolade_bowmen_recruitment_cost }
+	low_maintenance_cost = { gold = bowmen_low_maint_cost }
+	high_maintenance_cost = { gold = bowmen_high_maint_cost }
+
+	max_sub_regiments = 8
+	
+	stack = 100
+	ai_quality = {
+		value = culture_ai_weight_archers
+		add = 50
+	}
+}
+
+accolade_maa_skirmishers = {
+	type = skirmishers
+	icon = skirmishers
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:skirmisher_attribute
+			} 
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 20
+	toughness = 20
+	pursuit = 16
+	screen = 20
+	
+	terrain_bonus = {
+		forest = { damage = 8 toughness = 12 }
+		taiga = { damage = 8 toughness = 12 }
+		jungle = { damage = 8 toughness = 12 }
+		high_boreal = { damage = 8 toughness = 12 }
+	}
+
+	counters = {
+		heavy_infantry = 2
+	}
+
+
+	buy_cost = { gold = accolade_skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+
+	max_sub_regiments = 8
+	
+	stack = 150 #was 100
+	ai_quality = {
+		value = culture_ai_weight_skirmishers
+		add = 50
+	}
+}
+
+accolade_maa_outriders = {
+	type = light_cavalry
+	icon = light_cavalry
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:outrider_attribute
+			}  
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 30
+	toughness = 20
+	pursuit = 40
+	screen = 40
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		savanna = { damage = 30 }
+		hills = { damage = -5 }
+		dry_hills = { damage = -5 }
+		high_boreal = { damage = -5 pursuit = -10 }
+		forest = { damage = -5 pursuit = -10 } #added
+		taiga = { damage = -5 pursuit = -10 } #added
+		jungle = { damage = -5 pursuit = -10 } #added
+		mountains = { damage = -10 pursuit = -20 } #changed
+		desert_mountains = { damage = -10 pursuit = -20 } #changed
+		wetlands = { damage = -8 toughness = -5 pursuit = -15 screen = -15 }
+	}
+	
+	counters = {
+		archers = 2
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+
+	buy_cost = { gold = accolade_light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+
+	max_sub_regiments = 6
+	
+	stack = 100
+	ai_quality = {
+		value = culture_ai_weight_light_cavalry
+		add = 50
+	}
+}
+
+accolade_maa_lancers = {
+	type = heavy_cavalry
+	icon = heavy_cavalry
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:lancer_attribute
+			}
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 200
+	toughness = 70
+	pursuit = 40
+	screen = 0
+	
+	terrain_bonus = {
+		plains = { damage = 60 }
+		drylands = { damage = 60 }
+		savanna = { damage = 60 }
+		hills = { damage = -10 }
+		dry_hills = { damage = -10 }
+		high_boreal = { damage = -35 }
+		forest = { damage = -30 pursuit = -10 } #added
+		taiga = { damage = -30 pursuit = -10 }	#added
+		jungle = { damage = -30 pursuit = -10 } #added
+		mountains = { damage = -50 } #changed
+		desert_mountains = { damage = -50 } #changed
+		wetlands = { damage = -35 toughness = -5 pursuit = -5 }
+	}
+
+	counters = {
+		archers = 2
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -10 toughness = -5 }
+		harsh_winter = { damage = -20 toughness = -10 }
+	}
+
+	buy_cost = { gold = accolade_heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+
+	max_sub_regiments = 6
+	
+	stack = 50
+	ai_quality = {
+		value = culture_ai_weight_heavy_cavalry
+		add = 100
+	}
+}
+
+accolade_maa_crossbowers = {
+	type = archers
+	icon = crossbowmen
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:crossbowmen_attribute
+			}
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 60
+	toughness = 30
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { toughness = 15 } #changed
+		dry_hills = { damage = 15 }
+		mountains = { toughness = 15 } #added
+		plains = { toughness = -4 }
+		drylands = { toughness = -4 }
+		savanna = { toughness = -4 }
+		desert = { toughness = -4 }
+	}
+
+	counters = {
+		heavy_infantry = 2
+		heavy_cavalry = 2
+		archer_cavalry = 1
+	}
+
+	buy_cost = { gold = accolade_crossbowmen_recruitment_cost }
+	low_maintenance_cost = { gold = crossbowmen_low_maint_cost }
+	high_maintenance_cost = { gold = crossbowmen_high_maint_cost }
+
+	max_sub_regiments = 6
+	
+	stack = 100
+	ai_quality = {
+		value = culture_ai_weight_archers
+		add = 100
+	}
+}
+
+accolade_maa_cameliers = {
+	type = camel_cavalry
+	icon = camel_riders
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:camelry_attribute
+			} 
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 30
+	toughness = 20
+	pursuit = 30
+	screen = 30
+	
+	terrain_bonus = {
+		desert = { damage = 40 toughness = 16 }
+		drylands = { damage = 30 toughness = 16 }
+		savanna = { damage = 30 toughness = 16 }
+		oasis = { damage = 30 }
+		floodplains = { damage = 10 }
+		hills = { damage = -5 }
+		dry_hills = { damage = -3 }
+		forest = { damage = -10 pursuit = -10 } #added
+		taiga = { damage = -10 pursuit = -10 } #added
+		jungle = { damage = -10 pursuit = -10 } #added
+		desert_mountains = { damage = -5 pursuit = -5 }
+		high_boreal = { damage = -8 pursuit = -10 }
+		mountains = { damage = -8 pursuit = -10 }
+		wetlands = { damage = -8 toughness = -5 pursuit = -10 screen = -10 }
+	}
+	
+	counters = {
+		light_cavalry = 2
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -3 }
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+	
+	buy_cost = { gold = accolade_camel_rider_recruitment_cost }
+	low_maintenance_cost = { gold = camel_rider_low_maint_cost }
+	high_maintenance_cost = { gold = camel_rider_high_maint_cost }
+
+	max_sub_regiments = 6
+	
+	stack = 100
+	ai_quality = {
+		value = culture_ai_weight_camels
+		add = 75
+	}
+}
+
+accolade_maa_elephantiers = {
+	type = elephant_cavalry
+	icon = war_elephants
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:elephantry_attribute
+			} 
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 400
+	toughness = 100
+	pursuit = 0
+	screen = 0
+	
+	siege_value = 0.2
+	
+	terrain_bonus = {
+		mountains = { damage = -100 }
+		desert_mountains = { damage = -100 }
+		wetlands = { damage = -150 toughness = -20 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 2
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -30 toughness = -5 }
+		harsh_winter = { damage = -60 toughness = -10 }
+	}
+
+	buy_cost = { gold = accolade_war_elephant_recruitment_cost }
+	low_maintenance_cost = { gold = war_elephant_low_maint_cost }
+	high_maintenance_cost = { gold = war_elephant_high_maint_cost }
+
+	max_sub_regiments = 4
+	
+	stack = 25
+	hired_stack_size = 10
+	ai_quality = {
+		value = culture_ai_weight_elephants
+		add = 100
+	}
+}
+
+accolade_maa_horse_archers = {
+	type = archer_cavalry
+	icon = horse_archers
+
+	can_recruit = {
+		any_active_accolade = {
+			primary_type = {
+				this = accolade_type:horse_archer_attribute
+			}
+			accolade_rank >= 3
+		}
+	}
+	
+	damage = 45
+	toughness = 20
+	pursuit = 40
+	screen = 30
+	
+	terrain_bonus = {
+		steppe = { damage = 45 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		savanna = { damage = 20 }
+		forest = { damage = -20 pursuit = -20 } #added
+		taiga = { damage = -20 pursuit = -20 } #added
+		jungle = { damage = -20 pursuit = -20 }
+		wetlands = { damage = -30 pursuit = -30 }
+		mountains = { damage = -30 pursuit = -30 }
+		desert_mountains = { damage = -30 pursuit = -30 }
+	}
+
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 2
+	}
+
+	buy_cost = { gold = accolade_horse_archers_recruitment_cost }
+	low_maintenance_cost = { gold = horse_archers_low_maint_cost }
+	high_maintenance_cost = { gold = horse_archers_high_maint_cost }
+
+	max_sub_regiments = 5
+	
+	stack = 100
+	ai_quality = {
+		value = @cultural_maa_extra_ai_score
+		add = 100
+	}
+}
+
+camel_rider = {
+	type = camel_cavalry
+	
+	damage = 22
+	toughness = 15
+	pursuit = 20
+	screen = 20
+	
+	terrain_bonus = {
+		desert = { damage = 20 toughness = 8 }
+		drylands = { damage = 15 toughness = 8 }
+		savanna = { damage = 15 toughness = 8 }
+		oasis = { damage = 15 }
+		floodplains = { damage = 5 }
+		hills = { damage = -10 }
+		dry_hills = { damage = -8 }
+		forest = { damage = -10 pursuit = -10 } #added
+		taiga = { damage = -10 pursuit = -10 } #added
+		jungle = { damage = -10 pursuit = -10 } #added
+		high_boreal = { damage = -10 pursuit = -10 }
+		desert_mountains = { damage = -10 pursuit = -10 }
+		mountains = { damage = -15 pursuit = -20 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -20 screen = -20 }
+	}
+	
+	counters = {
+		light_cavalry = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -3 }
+		harsh_winter = { damage = -5 toughness = -2 }
+	}
+	
+	buy_cost = { gold = camel_rider_recruitment_cost }
+	low_maintenance_cost = { gold = camel_rider_low_maint_cost }
+	high_maintenance_cost = { gold = camel_rider_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = culture_ai_weight_camels }
+	icon = camel_riders
+}
+
+war_elephant = {
+	type = elephant_cavalry
+	
+	damage = 250
+	toughness = 50
+	pursuit = 0
+	screen = 0
+	
+	siege_value = 0.1
+	
+	terrain_bonus = {
+		mountains = { damage = -100 }
+		desert_mountains = { damage = -100 }
+		wetlands = { damage = -150 toughness = -20 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 2
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -30 toughness = -5 }
+		harsh_winter = { damage = -60 toughness = -10 }
+	}
+
+	buy_cost = { gold = war_elephant_recruitment_cost }
+	low_maintenance_cost = { gold = war_elephant_low_maint_cost }
+	high_maintenance_cost = { gold = war_elephant_high_maint_cost }
+	
+	stack = 25
+	hired_stack_size = 10
+	ai_quality = { value = culture_ai_weight_elephants }
+	icon = war_elephants
+}
+
+asawira = { #Iranian knights in early caliphal armies. Can be restored as a military unit with Khvarenah 4 dynasty legacy perk. 
+	type = archer_cavalry
+	
+	damage = 90
+	toughness = 35
+	pursuit = 35
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		savanna = { damage = 30 }
+		forest = { damage = -30 pursuit = -10 } #added
+		taiga = { damage = -30 pursuit = -10 }	#added
+		jungle = { damage = -30 pursuit = -10 } #added
+		high_boreal = { damage = -30 pursuit = -10 }
+		hills = { damage = -10 }
+		dry_hills = { damage = -10 }
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -25 } #very changed
+		wetlands = { damage = -50 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 2
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+	
+	can_recruit = {
+		exists = dynasty
+		dynasty = {
+			has_dynasty_perk = fp3_khvarenah_legacy_4
+		}	
+	}
+
+	buy_cost = { gold = asawira_recruitment_cost }
+	low_maintenance_cost = { gold = asawira_low_maint_cost }
+	high_maintenance_cost = { gold = asawira_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 30] }
+	icon = asawira
+}
+
+tarkhan = {
+	type = heavy_cavalry
+	
+	damage = 110
+	toughness = 30
+	pursuit = 30
+	screen = 10
+	
+	terrain_bonus = {
+		oasis = { damage = 30 }
+		drylands = { damage = 25 }
+		savanna = { damage = 25 }
+		desert = { damage = 10 pursuit = 10 }
+		forest = { damage = -30 pursuit = -10 } #added
+		taiga = { damage = -30 pursuit = -10 }	#added
+		jungle = { damage = -30 pursuit = -10 } #added
+		high_boreal = { damage = -30 pursuit = -10 }
+		mountains = { damage = -30 }
+		wetlands = { damage = -80 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		heavy_infantry = 1
+		heavy_cavalry = 0.5
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -10 toughness = -5 }
+		harsh_winter = { damage = -20 toughness = -5 }
+	}
+	
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_tarkhan }
+	}
+
+	buy_cost = { gold = cataphract_recruitment_cost }
+	low_maintenance_cost = { gold = cataphract_low_maint_cost }
+	high_maintenance_cost = { gold = cataphract_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 20] }
+	icon = tarkhan
+
+}
+
+tawashi = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 15
+	pursuit = 30
+	screen = 30
+	
+	terrain_bonus = {
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		savanna = { damage = 10 }
+		hills = { damage = 10 }
+		dry_hills = { damage = 10 }
+		mountains = { damage = 10 pursuit = 10 }
+		desert_mountains = { damage = 10 pursuit = 10 }
+		forest = { damage = -20 pursuit = -20 } #added
+		taiga = { damage = -20 pursuit = -20 } #added
+		high_boreal = { damage = -20 pursuit = -20 }
+		jungle = { damage = -20 pursuit = -20 }
+		wetlands = { damage = -15 toughness = -10 pursuit = -30 screen = -30 }
+	}
+
+	counters = {
+		archers = 1
+		heavy_infantry = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_tawashi }
+	}
+
+	winter_bonus = {
+		harsh_winter = { damage = -5 toughness = -3 }
+	}
+
+	buy_cost = { gold = tawashi_recruitment_cost }
+	low_maintenance_cost = { gold = tawashi_low_maint_cost }
+	high_maintenance_cost = { gold = tawashi_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 40] }
+	icon = tawashi
+}

@@ -1,0 +1,11 @@
+﻿CMH_fix_patch_effect = {
+	dynasty:442 = { #Jimena
+		every_dynasty_member = {
+			limit = {
+				is_ruler = yes
+				government_has_flag = government_is_clan
+			}
+			change_government = feudal_government
+		}
+	}
+}

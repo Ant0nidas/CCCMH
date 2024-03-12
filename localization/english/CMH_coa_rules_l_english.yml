@@ -1,0 +1,6 @@
+﻿l_english: 
+ rule_CMH_coa_rule:0 "CMH - Historic Heraldry"
+ setting_CMH_coa_rule_enabled:0 "Enabled"
+ setting_CMH_coa_rule_enabled_desc:0 "Coat of Arms will be modified by this mod."
+ setting_CMH_coa_rule_disabled:0 "Disabled"
+ setting_CMH_coa_rule_disabled_desc:0 "Coat of Arms will not be modified by this mod."
