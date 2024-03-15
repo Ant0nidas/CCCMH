@@ -368,7 +368,7 @@ types Outliner {
 										text = "OUTLINER_PINNED_CHARACTER"
 										align = nobaseline
 										default_format = "#high"
-										fontsize_min = 16 # Added
+										fontsize_min = 15 # Added
 									}
 
 									expand = {}
@@ -495,7 +495,7 @@ types Outliner {
 										autoresize = yes
 										align = nobaseline
 										default_format = "#medium"
-										fontsize_min = 16
+										fontsize_min = 15
 										alwaystransparent = yes
 									}
 
@@ -507,7 +507,7 @@ types Outliner {
 										text = "[Character.GetPrimaryTitle.GetNameNoTierNoTooltip]"
 										align = nobaseline
 										default_format = "#medium"
-										fontsize_min = 16
+										fontsize_min = 15
 									}
 
 									text_single = {
@@ -517,7 +517,7 @@ types Outliner {
 										text = "CV_NO_RELATIONS"
 										align = nobaseline
 										default_format = "#medium"
-										fontsize_min = 16
+										fontsize_min = 15
 									}
 
 									text_single = {
@@ -528,7 +528,7 @@ types Outliner {
 										text = "CHARACTER_NAME_ME_CAPITALIZED"
 										align = nobaseline
 										default_format = "#medium"
-										fontsize_min = 16
+										fontsize_min = 15
 									}
 
 									hbox = {
@@ -926,7 +926,7 @@ types Outliner {
 									text = "[Army.GetNameNoTooltip]"
 									default_format = "#high"
 									align = nobaseline
-									fontsize_min = 16
+									fontsize_min = 15
 								}
 							}
 
@@ -1261,7 +1261,7 @@ types Outliner {
 									text = "[Holding.GetProvince.GetNameNoTooltip]"
 									default_format = "#high"
 									align = nobaseline
-									fontsize_min = 16 # Added
+									fontsize_min = 15 # Added
 								}
 							}
 
@@ -1275,7 +1275,7 @@ types Outliner {
 									text = "[Holding.GetConstructionBuilding.GetNameNoTooltip]"
 									align = right|nobaseline
 									default_format = "#medium" # "#high"
-									fontsize_min = 16 # Added
+									fontsize_min = 15 # Added
 								}
 							}
 						}

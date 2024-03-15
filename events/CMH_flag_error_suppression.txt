@@ -1,0 +1,17 @@
+﻿namespace = CMH_flag_error_suppression #credit to Tobbzn
+
+CMH_flag_error_suppression.1 = {
+    hidden = yes
+    orphan = yes
+
+    immediate = {
+        fix_variable_error = {ERROR = marriage}
+        fix_variable_error = {ERROR = minority}
+        fix_variable_error = {ERROR = barons_and_minor_landholders}
+        fix_variable_error = {ERROR = mod_unknown}
+        fix_variable_error = {ERROR = parochial}
+        fix_variable_error = {ERROR = zealot}
+        fix_variable_error = {ERROR = glory_hound}
+        fix_variable_error = {ERROR = chandra}
+    }
+}

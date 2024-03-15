@@ -1,0 +1,53 @@
+﻿namespace = CMH_scope_error_suppression #credit to Tobbzn
+
+CMH_scope_error_suppression.1 = {
+    hidden = yes
+    orphan = yes
+
+    immediate = {
+        fix_scope_error = {ERROR = rv_revenge_target}
+        fix_scope_error = {ERROR = FF_ambition_get_council_position}
+        fix_scope_error = {ERROR = score_contender}
+        fix_scope_error = {ERROR = swedish}
+        fix_scope_error = {ERROR = councillor_castellan}
+        fix_scope_error = {ERROR = councillor_court_chaplain}
+        fix_scope_error = {ERROR = selected_province}
+        fix_scope_error = {ERROR = child_option}
+        fix_scope_error = {ERROR = rv_prisoner_target}
+        fix_scope_error = {ERROR = danish}
+        fix_scope_error = {ERROR = pressed_claim}
+        fix_scope_error = {ERROR = councillor_admiral}
+        fix_scope_error = {ERROR = shift_start_year}
+        fix_scope_error = {ERROR = councillor_chancellor}
+        fix_scope_error = {ERROR = dr_local_player}
+        fix_scope_error = {ERROR = shift_culture}
+        fix_scope_error = {ERROR = councillor_steward}
+        fix_scope_error = {ERROR = selected_char}
+        fix_scope_error = {ERROR = councillor_marshal}
+        fix_scope_error = {ERROR = councillor_spymaster}
+        fix_scope_error = {ERROR = shift_period_years}
+        fix_scope_error = {ERROR = coveted_title}
+        fix_scope_error = {ERROR = rv_revenge_target}
+        fix_scope_error = {ERROR = FF_ambition_get_council_position}
+        fix_scope_error = {ERROR = score_contender}
+        fix_scope_error = {ERROR = swedish}
+        fix_scope_error = {ERROR = councillor_castellan}
+        fix_scope_error = {ERROR = councillor_court_chaplain}
+        fix_scope_error = {ERROR = selected_province}
+        fix_scope_error = {ERROR = child_option}
+        fix_scope_error = {ERROR = rv_prisoner_target}
+        fix_scope_error = {ERROR = danish}
+        fix_scope_error = {ERROR = pressed_claim}
+        fix_scope_error = {ERROR = councillor_admiral}
+        fix_scope_error = {ERROR = shift_start_year}
+        fix_scope_error = {ERROR = councillor_chancellor}
+        fix_scope_error = {ERROR = dr_local_player}
+        fix_scope_error = {ERROR = shift_culture}
+        fix_scope_error = {ERROR = councillor_steward}
+        fix_scope_error = {ERROR = selected_char}
+        fix_scope_error = {ERROR = councillor_marshal}
+        fix_scope_error = {ERROR = councillor_spymaster}
+        fix_scope_error = {ERROR = shift_period_years}
+        fix_scope_error = {ERROR = coveted_title}
+    }
+}

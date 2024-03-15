@@ -1,0 +1,62 @@
+﻿namespace = CMH_variable_error_suppression #credit to Tobbzn
+
+CMH_variable_error_suppression.1 = {
+    hidden = yes
+    orphan = yes
+
+    immediate = {
+        fix_variable_error = {ERROR = fp2_struggle_hostility_ending}
+        fix_variable_error = {ERROR = SangboReg}
+        fix_variable_error = {ERROR = rv_declined_prisoner_list}
+        fix_variable_error = {ERROR = pressed_claim_length}
+        fix_variable_error = {ERROR = is_RICE_loaded}
+        fix_variable_error = {ERROR = promised_grand_wedding_by_other}
+        fix_variable_error = {ERROR = contender}
+        fix_variable_error = {ERROR = rv_revenge_list}
+        fix_variable_error = {ERROR = gm1_is_loaded}
+        fix_variable_error = {ERROR = dynasty_hre_prince_elector}
+        fix_variable_error = {ERROR = dynasty_hre_prince}
+        fix_variable_error = {ERROR = TCT_autocephaly}
+        fix_variable_error = {ERROR = dynasty_palatinate}
+        fix_variable_error = {ERROR = LuckyLuke_theme_setting}
+        fix_variable_error = {ERROR = first_fitna}
+        fix_variable_error = {ERROR = bap_is_loaded}
+        fix_variable_error = {ERROR = distinguished_PoW}
+        fix_variable_error = {ERROR = BAP_is_loaded}
+        fix_variable_error = {ERROR = islam_spawned}
+        fix_variable_error = {ERROR = Hezba}
+        fix_variable_error = {ERROR = council_chalc}
+        fix_variable_error = {ERROR = TCT_is_loaded}
+        fix_variable_error = {ERROR = colossus_monument}
+        fix_variable_error = {ERROR = selected_culture}
+        fix_variable_error = {ERROR = supporters}
+        fix_variable_error = {ERROR = rv_demanded_me_list}
+        fix_variable_error = {ERROR = tiele_culture_split}
+        fix_variable_error = {ERROR = antean_culture_split}
+        fix_variable_error = {ERROR = republic_government_type}
+        fix_variable_error = {ERROR = block_travel_plan_home_button}
+        fix_variable_error = {ERROR = commander}
+        fix_variable_error = {ERROR = sc_relative_power_of_coalition}
+        fix_variable_error = {ERROR = block_travel_plan_customize_button}
+        fix_variable_error = {ERROR = PoW_v1_1_4}
+        fix_variable_error = {ERROR = IMHO_vanilla_version}
+        fix_variable_error = {ERROR = esr_coalition_member}
+        fix_variable_error = {ERROR = TCT_ecumenical_patriarch_list}
+        fix_variable_error = {ERROR = culture_options}
+        fix_variable_error = {ERROR = ToT_is_loaded}
+        fix_variable_error = {ERROR = recent_heritage_shift}
+        fix_variable_error = {ERROR = recent_language_shift}
+        fix_variable_error = {ERROR = sp_stabil_catalyst_reveal_secret_detractor}
+        fix_variable_error = {ERROR = dr_is_loaded}
+        fix_variable_error = {ERROR = ub_is_loaded}
+        fix_variable_error = {ERROR = KOH_is_loaded}
+        fix_variable_error = {ERROR = esr_coalition_story}
+        fix_variable_error = {ERROR = IMHO_mod_version}
+        fix_variable_error = {ERROR = PoW_army_window}
+        fix_variable_error = {ERROR = sp_unrest_catalyst_reveal_secret_supporter}
+        fix_variable_error = {ERROR = FF_is_loaded}
+        fix_variable_error = {ERROR = game_started_with_alin_loaded}
+        fix_variable_error = {ERROR = TCT_canonical_territory}
+        fix_variable_error = {ERROR = dr_diarchy_window_owner}
+    }
+}
