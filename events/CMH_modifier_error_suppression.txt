@@ -1,0 +1,10 @@
+﻿namespace = CMH_modifier_error_suppression #credit to Tobbzn
+
+CMH_modifier_error_suppression.1 = {
+    hidden = yes
+    orphan = yes
+
+    immediate = {
+        add_character_modifier = {ERROR = prisoner_of_war_travel}
+    }
+}

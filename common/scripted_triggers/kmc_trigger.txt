@@ -28,12 +28,11 @@ KM_can_be_knight_trigger = {
 				has_global_variable = kmc_children_cannot_be_knight
 			}
 			AND = {
-				any_spouse = {
+				any_spouse ?= {
 					OR = {
 						is_child_of = $ARMY_OWNER$
 						is_grandchild_of = $ARMY_OWNER$
 					}
-
 				}
 				has_global_variable = kmc_child_spouses_cannot_be_knight
 			}

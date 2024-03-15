@@ -8,4 +8,30 @@
 			change_government = feudal_government
 		}
 	}
+	if = {
+		limit = { game_start_date = 867.1.1 }
+		character:163115 ?= {
+			set_culture = title:c_cairo.culture
+			set_character_faith_with_conversion = title:c_cairo.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_cairo.culture
+				set_character_faith_with_conversion = title:c_cairo.faith
+			}
+		}
+	}
+	#RICE
+	if = {
+		limit = {
+			game_start_date = 867.1.1
+			exists = global_var:is_RICE_loaded
+		}
+		character:RICE_upper_egypt_012 ?= {
+			set_culture = title:c_awjila.culture
+			set_character_faith_with_conversion = title:c_awjila.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_awjila.culture
+				set_character_faith_with_conversion = title:c_awjila.faith
+			}
+		}
+	}
 }

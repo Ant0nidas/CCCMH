@@ -469,6 +469,10 @@ NFaction = {
 NCourtPositions = {
 	MAX_SCORE_TO_FIRE_COURT_POSITION = -50 				# Threshold for "ai_will_do" in Court Positions for the AI to begin firing Court Position holders
 	MIN_SCORE_TO_HIRE_COURT_POSITION = 0 				# Threshold for "ai_will_do" in Court Positions for the AI to hire a Court Position
+
+	COURT_POSITION_TASK_SWITCH_SCORE = 1.25				# In order for the AI to switch to a different task type, the task needs to have a score that's at least the score of the current task multiplied with this. 1.25 means it needs to be 25% higher
+	MIN_SCORE_TO_START_COURT_POSITION_TASK = 0			# Threshold for "ai_will_do" in Court Positions Task types for the AI to start tasks (inactive tasks with this score or higher are considered)
+	MAX_SCORE_TO_STOP_COURT_POSITION_TASK = -10 		# Threshold for "ai_will_do" in Court Positions Task types for the AI to begin stopping tasks (active tasks with scores below or equal to this will be stopped)
 }
 
 NInventory = {

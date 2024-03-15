@@ -1,4 +1,4 @@
-﻿##CMH Double Norman Knight Fix
+﻿##CMH Double Norman Knight Fix (RICE_regional_traditions.txt)
 tradition_RICE_adventurers_and_aristocrats = {
 	category = regional
 
@@ -92,6 +92,7 @@ tradition_RICE_adventurers_and_aristocrats = {
 	}
 }
 
+
 tradition_RICE_adventurers_and_aristocrats_military = {
 	category = regional
 
@@ -181,6 +182,7 @@ tradition_RICE_adventurers_and_aristocrats_military = {
 		value = 100
 	}
 }
+
 
 tradition_RICE_adventurers_and_aristocrats_culture = {
 	category = regional
