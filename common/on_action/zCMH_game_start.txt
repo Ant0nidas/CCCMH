@@ -28,6 +28,13 @@ CMH_on_game_start = {
 			}
 			CMH_africa_patch_effect = yes
 		}
+		if = {
+			limit = {
+				exists = global_var:IBL_is_loaded
+				exists = global_var:NPE_is_loaded
+			}
+			CMH_name_patch_effect = yes
+		}
 		CMH_fix_patch_effect = yes
 	}
 }

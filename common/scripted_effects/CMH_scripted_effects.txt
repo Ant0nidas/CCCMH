@@ -1,12 +1,127 @@
-﻿#By Elvain and Kaepbora
+﻿## Historic Heraldric Quartering by CMH
+#CMH modified code originally by Princess Stabbity's Basic Nessassities - Happy Heraldry
+CMH_coa_modify_cadet_coa = {
+	house_head = {
+		capital_barony = {
+			save_scope_as = coa_capital
+		}
+	}
+	if = {
+		limit = {
+			current_year < 1150
+			house_head = {
+				has_religion = religion:christianity_religion
+				capital_province = { geographical_region = world_europe	}
+			}
+		}
+		set_coa = scope:coa_capital
+	}
+	else_if = {
+		limit = {
+			NAND = {
+				current_year >= 1150
+				house_head = {
+					has_religion = religion:christianity_religion
+					capital_province = { geographical_region = world_europe	}
+				}
+			}
+		}
+		generate_coa = yes
+	}
+}
+
+#IBL + NPE compatch
+CMH_name_patch_effect = {
+	dynasty:igbodyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:igbodyn006 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:igbodyn007 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:igbodyn008 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:igbodyn009 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:butrdyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:butrdyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:butrdyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:jukundyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:jukundyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:jukundyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:jukundyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:jukundyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:nupedyn010 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:akpotodyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:akpotodyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:akpotodyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:hausadyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:iblbaranisdyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:house_diaz = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zanata_rashid = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:house_matghara = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:iblbaranisdyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:iblbaranisdyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_talkata = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:house_kumiya = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:house_midyuna = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:maghrebi_sulaymanid = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:mazata_dagma = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:mazata_wislu = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zanata_sindjas = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:fatin_maghila = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:baranis_azdaja = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:baranis_mesgen = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_anjafa = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_fishtala = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:baranis_awraba = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_haskura = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:fatin_sadina = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:masmuda_ragraga = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:masmuda_sawda = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_serta = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:butr_zanata = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sanhaja_suswala = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:badedyn000 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:badedyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:badedyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:saghmaradyn = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:dagadyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:dagadyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:dagadyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kurumdyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kurumdyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kurumdyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kurumdyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kurumdyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kanuridyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kanuridyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kanuridyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kibsidyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kibsidyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kibsidyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:kibsidyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:lobidyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:lobidyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:lobidyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:songhaidyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:songhaidyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sorkodyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:sorkodyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn001 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn002 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn003 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn004 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarmadyn006 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zarma_tellem = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zaghawadyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zaghawadyn005 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zaghawadyn006 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zaghawadyn007 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:zaghawadyn008 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:saodyn010 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	dynasty:saodyn011 = {every_dynasty_member = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes every_ancestor = { even_if_dead = yes name_gen_effect = yes } } } }
+	#Misc
+	character:3900 = { change_first_name = Masud }
+}
+
+#By Elvain and Kaepbora
 CMH_africa_patch_effect = {
-	##kill the old man
-	#every_living_character = {
-	#	limit = { age > 128 }
-	#	death = {
-	#		death_reason = death_vanished
-	#	}
-	#}
 	
 	faith:coptic.religious_head = {
 		set_culture = culture:ce_copt
@@ -1578,5 +1693,52 @@ CMH_africa_patch_effect = {
 			culture = culture:lobi
 		}
 		set_culture = culture:kulango
+	}
+}
+
+#Various Fixes
+CMH_fix_patch_effect = {
+	##kill the old man
+	#every_living_character = {
+	#	limit = { age > 128 }
+	#	death = {
+	#		death_reason = death_vanished
+	#	}
+	#}
+
+	dynasty:442 = { #Jimena
+		every_dynasty_member = {
+			limit = {
+				is_ruler = yes
+				government_has_flag = government_is_clan
+			}
+			change_government = feudal_government
+		}
+	}
+	if = {
+		limit = { game_start_date = 867.1.1 }
+		character:163115 ?= {
+			set_culture = title:c_cairo.culture
+			set_character_faith_with_conversion = title:c_cairo.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_cairo.culture
+				set_character_faith_with_conversion = title:c_cairo.faith
+			}
+		}
+	}
+	#RICE
+	if = {
+		limit = {
+			game_start_date = 867.1.1
+			exists = global_var:is_RICE_loaded
+		}
+		character:RICE_upper_egypt_012 ?= {
+			set_culture = title:c_awjila.culture
+			set_character_faith_with_conversion = title:c_awjila.faith
+			every_courtier_or_guest = {
+				set_culture = title:c_awjila.culture
+				set_character_faith_with_conversion = title:c_awjila.faith
+			}
+		}
 	}
 }

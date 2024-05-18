@@ -100,9 +100,7 @@ found_cadet_house_decision_effect = {
 				}
 				save_scope_as = new_branch_dynasty_banner
 			}
-			scope:new_house = {
-				add_house_artifact_claim = scope:new_branch_dynasty_banner
-			}
+			scope:new_house = { add_house_artifact_claim = scope:new_branch_dynasty_banner }
 		}
 
 		# Struggle Catalysts
@@ -133,14 +131,6 @@ found_cadet_house_decision_effect = {
         	    limit = {
         	        culture = {
         	            is_npe_supported_culture = yes
-        	        }
-        	        scope:new_head = {
-        	            dynasty = {
-        	                any_in_list = {
-        	                    variable = name_pack_support_dynasty
-        	                    this = scope:new_head
-        	                }
-        	            }
         	        }
         	    }
         	    set_global_variable = {

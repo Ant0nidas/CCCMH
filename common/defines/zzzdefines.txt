@@ -99,7 +99,7 @@ NCharacterOpinion = {
 	SHORT_REIGN_YEARS = 20
 	LONG_REIGN_YEARS = 5
 	SHORT_REIGN_MULTIPLIER = -0.5
-	LONG_REIGN_MULTIPLIER = 1
+	LONG_REIGN_MULTIPLIER = 0.5
 }
 
 NCombat = {
@@ -140,7 +140,7 @@ NDomain = {
 
 NMercenary = {
 	LEVY_COST_PER_100_SOLDIERS = 8.0		# The cost of the levy regiment part of mercenary companies, per 100 soldiers for better precision
-	MAA_COST_RATIO = 0.35					# The cost of the MAA regiments of mercenary companies as a fraction of what those regiments cost when buying them
+	MAA_COST_RATIO = 0.4					# The cost of the MAA regiments of mercenary companies as a fraction of what those regiments cost when buying them
 }
 
 NRaid = {
